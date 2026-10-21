@@ -1,16 +1,20 @@
 ---
-name: "Template"
-guid: "eb5d7894-8eef-4b36-aa6f-5d124e828ce1"
-version: "1.0.0.0"
+name: "ListenBrainz Weekly Jams"
+guid: "5b9c524a-b162-4a28-9c6d-3a30e4b33998"
+version: "0.1.0.0"
 targetAbi: "10.11.0.0"
 framework: "net9.0"
-overview: "Short description about your plugin"
+overview: "Sync your ListenBrainz Weekly Jams playlist into Jellyfin"
 description: >
-  This is a longer description that can span more than one
-  line and include details about your plugin.
-category: "General"
-owner: "jellyfin"
+  Keeps a rolling Jellyfin playlist in sync with the Weekly Jams playlist
+  that ListenBrainz generates from your listening history every week. Tracks
+  are matched by MusicBrainz recording ID first, with an artist/title
+  fallback, and tracks missing from your library are reported in the server
+  log. Sync runs as a scheduled task (default: daily).
+category: "Music"
+owner: "tabjy"
 artifacts:
-- "Jellyfin.Plugin.Template.dll"
+  - "Jellyfin.Plugin.ListenBrainzWeeklyJams.dll"
 changelog: >
-  changelog
+  Initial development build. The sync engine is not yet implemented;
+  this release only establishes the plugin identity and configuration.

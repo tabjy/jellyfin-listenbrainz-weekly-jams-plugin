@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ListenBrainz Weekly Jams</title>
+</head>
+<body>
+    <div id="ListenBrainzWeeklyJamsConfigPage" data-role="page" class="page type-interior pluginConfigurationPage" data-require="emby-input,emby-button">
+        <div data-role="content">
+            <div class="content-primary">
+                <form id="ListenBrainzWeeklyJamsConfigForm">
+                    <div class="inputContainer">
+                        <label class="inputLabel inputLabelUnfocused" for="ListenBrainzUsername">ListenBrainz username</label>
+                        <input id="ListenBrainzUsername" name="ListenBrainzUsername" type="text" is="emby-input" />
+                        <div class="fieldDescription">The ListenBrainz account whose Weekly Jams playlist is synced. Only public data is read; no user token is required.</div>
+                    </div>
+                    <div class="inputContainer">
+                        <label class="inputLabel inputLabelUnfocused" for="PlaylistName">Playlist name</label>
+                        <input id="PlaylistName" name="PlaylistName" type="text" is="emby-input" />
+                        <div class="fieldDescription">The Jellyfin playlist that is created and refreshed each week.</div>
+                    </div>
+                    <div>
+                        <button is="emby-button" type="submit" class="raised button-submit block emby-button">
+                            <span>Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var ListenBrainzWeeklyJamsConfig = {
+                pluginUniqueId: '5b9c524a-b162-4a28-9c6d-3a30e4b33998'
+            };
+
+            document.querySelector('#ListenBrainzWeeklyJamsConfigPage')
+                .addEventListener('pageshow', function() {
+                    Dashboard.showLoadingMsg();
+                    ApiClient.getPluginConfiguration(ListenBrainzWeeklyJamsConfig.pluginUniqueId).then(function (config) {
+                        document.querySelector('#ListenBrainzUsername').value = config.ListenBrainzUsername;
+                        document.querySelector('#PlaylistName').value = config.PlaylistName;
+                        Dashboard.hideLoadingMsg();
+                    });
+                });
+
+            document.querySelector('#ListenBrainzWeeklyJamsConfigForm')
+                .addEventListener('submit', function(e) {
+                Dashboard.showLoadingMsg();
+                ApiClient.getPluginConfiguration(ListenBrainzWeeklyJamsConfig.pluginUniqueId).then(function (config) {
+                    config.ListenBrainzUsername = document.querySelector('#ListenBrainzUsername').value;
+                    config.PlaylistName = document.querySelector('#PlaylistName').value;
+                    ApiClient.updatePluginConfiguration(ListenBrainzWeeklyJamsConfig.pluginUniqueId, config).then(function (result) {
+                        Dashboard.processPluginConfigurationUpdateResult(result);
+                    });
+                });
+
+                e.preventDefault();
+                return false;
+            });
+        </script>
+    </div>
+</body>
+</html>
