@@ -1,4 +1,5 @@
 using Jellyfin.Plugin.ListenBrainzWeeklyJams.ListenBrainz;
+using Jellyfin.Plugin.ListenBrainzWeeklyJams.Matching;
 using MediaBrowser.Controller;
 using MediaBrowser.Controller.Plugins;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,5 +15,7 @@ public class PluginServiceRegistrator : IPluginServiceRegistrator
     public void RegisterServices(IServiceCollection serviceCollection, IServerApplicationHost applicationHost)
     {
         serviceCollection.AddSingleton<ListenBrainzApiClient>();
+        serviceCollection.AddSingleton<ILibraryQueryFacade, LibraryQueryFacade>();
+        serviceCollection.AddSingleton<LibraryMatcher>();
     }
 }

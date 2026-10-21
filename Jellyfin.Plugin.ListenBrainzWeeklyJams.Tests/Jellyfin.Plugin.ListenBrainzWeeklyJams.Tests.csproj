@@ -17,6 +17,13 @@
     <ProjectReference Include="..\Jellyfin.Plugin.ListenBrainzWeeklyJams\Jellyfin.Plugin.ListenBrainzWeeklyJams.csproj" />
   </ItemGroup>
 
+  <!-- The plugin excludes these from its runtime assets (the server provides
+       them); tests need the actual assemblies present in the output. -->
+  <ItemGroup>
+    <PackageReference Include="Jellyfin.Controller" Version="10.11.5" />
+    <PackageReference Include="Jellyfin.Model" Version="10.11.5" />
+  </ItemGroup>
+
   <ItemGroup>
     <None Update="TestData\*.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
