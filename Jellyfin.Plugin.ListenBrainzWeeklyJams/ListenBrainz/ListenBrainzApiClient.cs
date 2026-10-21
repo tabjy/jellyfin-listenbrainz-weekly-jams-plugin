@@ -18,7 +18,7 @@ namespace Jellyfin.Plugin.ListenBrainzWeeklyJams.ListenBrainz;
 /// with rate limiting (FR-10), retries (NFR-05), required User-Agent (FR-09)
 /// and actionable error mapping (FR-11).
 /// </summary>
-public sealed class ListenBrainzApiClient : IDisposable
+public sealed class ListenBrainzApiClient : IListenBrainzApiClient, IDisposable
 {
     private const string ApiBaseUrl = "https://api.listenbrainz.org";
     private const int PlaylistPageSize = 25;

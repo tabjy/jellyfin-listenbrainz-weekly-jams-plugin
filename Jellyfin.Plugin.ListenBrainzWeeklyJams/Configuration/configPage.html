@@ -5,7 +5,7 @@
     <title>ListenBrainz Weekly Jams</title>
 </head>
 <body>
-    <div id="ListenBrainzWeeklyJamsConfigPage" data-role="page" class="page type-interior pluginConfigurationPage" data-require="emby-input,emby-button">
+    <div id="ListenBrainzWeeklyJamsConfigPage" data-role="page" class="page type-interior pluginConfigurationPage" data-require="emby-input,emby-button,emby-select,emby-checkbox">
         <div data-role="content">
             <div class="content-primary">
                 <form id="ListenBrainzWeeklyJamsConfigForm">
@@ -17,7 +17,20 @@
                     <div class="inputContainer">
                         <label class="inputLabel inputLabelUnfocused" for="PlaylistName">Playlist name</label>
                         <input id="PlaylistName" name="PlaylistName" type="text" is="emby-input" />
-                        <div class="fieldDescription">The Jellyfin playlist that is created and refreshed each week.</div>
+                        <div class="fieldDescription">The Jellyfin playlist that is created and refreshed each week. You can rename it later; the sync will keep tracking it.</div>
+                    </div>
+                    <div class="selectContainer">
+                        <label class="selectLabel" for="OwningUserId">Playlist owner</label>
+                        <select is="emby-select" id="OwningUserId" name="OwningUserId" class="emby-select-withcolor emby-select">
+                            <option value="">First administrator (default)</option>
+                        </select>
+                        <div class="fieldDescription">The Jellyfin user who owns the playlist. Changing the owner after creation is not supported.</div>
+                    </div>
+                    <div class="checkboxContainer checkboxContainer-withDescription">
+                        <label class="emby-checkbox-label">
+                            <input id="IsPublic" name="IsPublic" type="checkbox" is="emby-checkbox" />
+                            <span>Visible to all users</span>
+                        </label>
                     </div>
                     <div>
                         <button is="emby-button" type="submit" class="raised button-submit block emby-button">
@@ -25,36 +38,128 @@
                         </button>
                     </div>
                 </form>
+
+                <div class="sectionTitleContainer" style="margin-top: 2em;">
+                    <h2 class="sectionTitle">Sync</h2>
+                </div>
+                <div id="LbwjStatus" class="fieldDescription" style="margin-bottom: 1em;">Not synced yet.</div>
+                <div>
+                    <button is="emby-button" type="button" id="LbwjSyncNow" class="raised block emby-button">
+                        <span>Sync now</span>
+                    </button>
+                    <div class="fieldDescription" style="margin-top: 0.5em;">Runs a full sync immediately, even if this week's playlist was already synced. The scheduled task (daily at 04:00 by default) skips unchanged weeks.</div>
+                </div>
             </div>
         </div>
         <script type="text/javascript">
-            var ListenBrainzWeeklyJamsConfig = {
+            var LbwjConfig = {
                 pluginUniqueId: '5b9c524a-b162-4a28-9c6d-3a30e4b33998'
             };
+
+            function lbwjStatusUrl() { return ApiClient.getUrl('plugins/ListenBrainzWeeklyJams/Status'); }
+            function lbwjSyncUrl() { return ApiClient.getUrl('plugins/ListenBrainzWeeklyJams/SyncNow'); }
+
+            function lbwjParse(result) {
+                if (typeof result === 'string') { return JSON.parse(result); }
+                if (result && typeof result.responseText === 'string') { return JSON.parse(result.responseText); }
+                return result;
+            }
+
+            function lbwjRenderStatus(state) {
+                var el = document.querySelector('#LbwjStatus');
+                if (!state || !state.lastSyncedWeek) {
+                    el.textContent = 'Not synced yet.';
+                    return;
+                }
+                var s = state.lastSummary || {};
+                var when = state.lastSyncAtUtc ? new Date(state.lastSyncAtUtc).toLocaleString() : 'unknown time';
+                el.textContent = 'Last sync ' + when + ' — week of ' + state.lastSyncedWeek + ': ' +
+                    (s.matched || 0) + '/' + (s.total || 0) + ' matched (' + (s.viaMbid || 0) + ' by MBID, ' +
+                    (s.viaName || 0) + ' by name), ' + (s.missing || 0) + ' missing.';
+            }
+
+            function lbwjRefreshStatus() {
+                ApiClient.ajax({ url: lbwjStatusUrl(), type: 'GET', dataType: 'json' })
+                    .then(lbwjParse)
+                    .then(lbwjRenderStatus)
+                    .catch(function () { /* status is best-effort */ });
+            }
+
+            function lbwjLoadUsers(config) {
+                return ApiClient.getUsers().then(function (users) {
+                    var select = document.querySelector('#OwningUserId');
+                    select.innerHTML = '<option value="">First administrator (default)</option>';
+                    users.forEach(function (u) {
+                        var option = document.createElement('option');
+                        option.value = u.Id;
+                        option.textContent = u.Name;
+                        select.appendChild(option);
+                    });
+                    select.value = config.OwningUserId || '';
+                });
+            }
 
             document.querySelector('#ListenBrainzWeeklyJamsConfigPage')
                 .addEventListener('pageshow', function() {
                     Dashboard.showLoadingMsg();
-                    ApiClient.getPluginConfiguration(ListenBrainzWeeklyJamsConfig.pluginUniqueId).then(function (config) {
-                        document.querySelector('#ListenBrainzUsername').value = config.ListenBrainzUsername;
-                        document.querySelector('#PlaylistName').value = config.PlaylistName;
+                    ApiClient.getPluginConfiguration(LbwjConfig.pluginUniqueId).then(function (config) {
+                        document.querySelector('#ListenBrainzUsername').value = config.ListenBrainzUsername || '';
+                        document.querySelector('#PlaylistName').value = config.PlaylistName || 'Weekly Jams';
+                        document.querySelector('#IsPublic').checked = config.IsPublic !== false;
+                        return lbwjLoadUsers(config);
+                    }).then(function() {
                         Dashboard.hideLoadingMsg();
                     });
+                    lbwjRefreshStatus();
                 });
 
             document.querySelector('#ListenBrainzWeeklyJamsConfigForm')
                 .addEventListener('submit', function(e) {
                 Dashboard.showLoadingMsg();
-                ApiClient.getPluginConfiguration(ListenBrainzWeeklyJamsConfig.pluginUniqueId).then(function (config) {
+                ApiClient.getPluginConfiguration(LbwjConfig.pluginUniqueId).then(function (config) {
                     config.ListenBrainzUsername = document.querySelector('#ListenBrainzUsername').value;
                     config.PlaylistName = document.querySelector('#PlaylistName').value;
-                    ApiClient.updatePluginConfiguration(ListenBrainzWeeklyJamsConfig.pluginUniqueId, config).then(function (result) {
+                    var owner = document.querySelector('#OwningUserId').value;
+                    config.OwningUserId = owner ? owner : null;
+                    config.IsPublic = document.querySelector('#IsPublic').checked;
+                    ApiClient.updatePluginConfiguration(LbwjConfig.pluginUniqueId, config).then(function (result) {
                         Dashboard.processPluginConfigurationUpdateResult(result);
                     });
                 });
 
                 e.preventDefault();
                 return false;
+            });
+
+            document.querySelector('#LbwjSyncNow').addEventListener('click', function () {
+                var button = this;
+                button.disabled = true;
+                Dashboard.showLoadingMsg();
+
+                // Save the form first so SyncNow uses the visible configuration.
+                var save = ApiClient.getPluginConfiguration(LbwjConfig.pluginUniqueId).then(function (config) {
+                    config.ListenBrainzUsername = document.querySelector('#ListenBrainzUsername').value;
+                    config.PlaylistName = document.querySelector('#PlaylistName').value;
+                    var owner = document.querySelector('#OwningUserId').value;
+                    config.OwningUserId = owner ? owner : null;
+                    config.IsPublic = document.querySelector('#IsPublic').checked;
+                    return ApiClient.updatePluginConfiguration(LbwjConfig.pluginUniqueId, config);
+                });
+
+                save.then(function () {
+                    return ApiClient.ajax({ url: lbwjSyncUrl(), type: 'POST', dataType: 'json' });
+                }).then(function (result) {
+                    Dashboard.hideLoadingMsg();
+                    button.disabled = false;
+                    var report = lbwjParse(result);
+                    Dashboard.alert('Weekly Jams sync complete: ' + report.matched + '/' + report.total + ' matched (' +
+                        report.missing + ' missing). Check the server log for the missing-track list.');
+                    lbwjRefreshStatus();
+                }, function (error) {
+                    Dashboard.hideLoadingMsg();
+                    button.disabled = false;
+                    Dashboard.alert('Weekly Jams sync failed: ' + (error && error.message ? error.message : 'unknown error'));
+                });
             });
         </script>
     </div>
