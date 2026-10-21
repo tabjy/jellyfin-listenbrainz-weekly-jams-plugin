@@ -275,7 +275,7 @@ Remaining (design-phase, not blocking requirements):
 
 | # | Question |
 |---|---|
-| OQ-5 | Bulk vs per-track provider-ID query strategy for the matcher (tradeoff: single query + in-memory map vs ~50 targeted queries) — decide in the design doc with measurements. Dry-run data point: bulk HTTP pull of 19k items took 17.6s over HTTPS; both options look viable at personal scale. |
+| OQ-5 | **Resolved (2026-10-21)** — matcher uses **paged bulk + streaming MBID-set filter**: page (5k) through all audio items having `MusicBrainzRecording`, keep only candidates matching the playlist's recording-MBID set (all candidates — feeds OQ-6), discard each page, so memory is bounded by page size, not library size. Benchmark at 19k items (`benchmarks/oq5-bench/`, faithful Jellyfin schema + EF shapes): per-track 1,427 ms vs paged bulk 658 ms — the `HasAnyProviderId` concat translation defeats the `(ProviderId, ProviderValue, ItemId)` index, making every per-track query a provider-table scan, and per-track cost additionally scales with playlist length. Name fallback issues per-miss queries only (~2–3 per sync in practice). |
 | OQ-6 | **Ambiguity policy**: when one recording MBID resolves to multiple Jellyfin items (observed on 22% of tracks — album vs compilation vs duplicate rips), which item wins? Candidate rules: exact normalized-title match first, prefer album tracks over compilations, prefer highest quality; must be deterministic and logged. Decide in the design doc. |
 
 ## 13. Milestones
@@ -353,3 +353,4 @@ Additional observations:
 | v0.1 | 2026-10-20 | Initial draft from kick-off Q&A. |
 | v0.2 | 2026-10-20 | D-7/D-8 added (daily cadence + immutable-MBID short-circuit); FR-07 selection via structured metadata (`source_patch` + `date`); FR-21 default daily; §8.6 added (FR-24/25); pagination mandatory (FR-06); OQ-1…4 resolved with live API + Jellyfin source verification (Appendix A); OQ-5 added for design phase. |
 | v0.3 | 2026-10-20 | Dry-run results recorded (Appendix A.3): 96% match rate, 97.4% tagging coverage, 22% ambiguity rate → OQ-6 added; same-week regeneration and CDN/UA findings; assumption 4 validated. |
+| v0.4 | 2026-10-21 | OQ-5 resolved by measurement (`benchmarks/oq5-bench/`): paged bulk + streaming MBID-set filter beats per-track 658 ms vs 1,427 ms at 19k items; concat predicate in `HasAnyProviderId` translation defeats the provider index. |
