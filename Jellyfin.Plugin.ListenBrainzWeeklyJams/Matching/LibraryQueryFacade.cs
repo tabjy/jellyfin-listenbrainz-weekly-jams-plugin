@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Jellyfin.Data.Enums;
+using Jellyfin.Extensions;
 using MediaBrowser.Controller.Entities;
 using MediaBrowser.Controller.Entities.Audio;
 using MediaBrowser.Controller.Library;
@@ -49,7 +50,13 @@ public sealed class LibraryQueryFacade : ILibraryQueryFacade
         var query = new InternalItemsQuery
         {
             IncludeItemTypes = new[] { BaseItemKind.Audio },
-            NameContains = title,
+            // Jellyfin 12.x matches NameContains against the CleanName column
+            // with a case-sensitive Contains, so the search term must be
+            // normalized exactly like CleanName (GetCleanValue: lowercase,
+            // diacritics folded, punctuation to spaces) or capitalized or
+            // punctuation-carrying titles never match. Found during the
+            // 2026-10-21 integration test ("Shelter" vs cleanName "shelter").
+            NameContains = title.GetCleanValue(),
             Limit = limit
         };
 
