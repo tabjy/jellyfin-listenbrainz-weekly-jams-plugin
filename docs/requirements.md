@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Draft v0.3 — for review |
+| **Status** | v0.7 — implemented (plugin v0.2.0), integration-tested on the production server |
 | **Date** | 2026-10-20 |
 | **Target** | Jellyfin 12.2 (`targetAbi 12.0.0.0`, verified against `v12.2` source), .NET 10 (`net10.0`) — retargeted from 10.11 on 2026-10-21 when integration pre-flight showed the deployment server runs 12.2.0 |
 | **Name** | **ListenBrainz Weekly Jams**, assembly `Jellyfin.Plugin.ListenBrainzWeeklyJams` (OQ-1 resolved) |
@@ -347,13 +347,50 @@ Additional observations:
 - CJK normalization was a non-factor for matching on this library: MBID resolution
   carried 94% of matches; name-fallback rescues worked on first-name-tier matches.
 
+### A.4 Integration test on the production server (2026-10-21)
+
+Deployed to the owner's production server (Jellyfin 12.2.0, podman) and verified
+end-to-end through the HTTP API. The plugin loaded cleanly and the scheduled
+task armed its daily 04:00 UTC trigger at startup.
+
+**Findings (both fixed before release):**
+
+1. **Platform mismatch** — pre-flight `/System/Info/Public` showed the server
+   runs 12.2.0 while the plugin targeted 10.11 (the scaffold template's stale
+   default) → retargeted to 12.2/net10.0, all API facts re-verified against
+   `v12.2` source (v0.6).
+2. **`NameContains` matches `CleanName`, case-sensitively** — Jellyfin 12.x
+   translates the query to a `Contains` over the normalized `CleanName` column,
+   so raw ListenBrainz titles ("Shelter") never matched items whose clean name
+   is lowercase ("shelter"). CJK titles carry no case or punctuation, which is
+   why only the capitalized ASCII name match failed — a diagnostic pattern.
+   Fixed by normalizing search terms with Jellyfin's own `GetCleanValue()`.
+   (Also noted: the HTTP `/Items` endpoint no longer exposes a `NameContains`
+   parameter at all in 12.x.)
+
+**Final numbers** (week of 2026-10-12, 50 tracks, ~19k-item library):
+
+| Metric | Result |
+|---|---|
+| Match rate | **48/50** — 45 via MBID, 3 via name fallback |
+| Missing | 2 (confirmed library gaps, reported per D-5) |
+| Ambiguous | 11 (OQ-6 policy applied) |
+| Full sync (forced) | ~10 s wall clock |
+| Short-circuit run (scheduled task) | **0.36 s** — 27× cheaper, AC-2.4 proven live |
+| Order verification | MBID subsequence walk: playlist is exactly LB order minus missing tracks |
+
+Live-verified acceptance criteria: AC-1.1, AC-1.2, AC-2.1 (in-place refresh,
+no duplicates), AC-2.4, AC-3.1, AC-5.1/5.2. Error paths (AC-1.3, AC-2.3,
+AC-4.1/4.2) are unit-tested; sabotaging the production server to exercise
+them was declined.
+
 ## Change log
 
 | Version | Date | Changes |
 |---|---|---|
-| v0.1 | 2026-10-20 | Initial draft from kick-off Q&A. |
-| v0.2 | 2026-10-20 | D-7/D-8 added (daily cadence + immutable-MBID short-circuit); FR-07 selection via structured metadata (`source_patch` + `date`); FR-21 default daily; §8.6 added (FR-24/25); pagination mandatory (FR-06); OQ-1…4 resolved with live API + Jellyfin source verification (Appendix A); OQ-5 added for design phase. |
+| v0.1 | 2026-10-20 | Initial draft from kick-off Q&A. || v0.2 | 2026-10-20 | D-7/D-8 added (daily cadence + immutable-MBID short-circuit); FR-07 selection via structured metadata (`source_patch` + `date`); FR-21 default daily; §8.6 added (FR-24/25); pagination mandatory (FR-06); OQ-1…4 resolved with live API + Jellyfin source verification (Appendix A); OQ-5 added for design phase. |
 | v0.3 | 2026-10-20 | Dry-run results recorded (Appendix A.3): 96% match rate, 97.4% tagging coverage, 22% ambiguity rate → OQ-6 added; same-week regeneration and CDN/UA findings; assumption 4 validated. |
 | v0.4 | 2026-10-21 | OQ-5 resolved by measurement (`benchmarks/oq5-bench/`): paged bulk + streaming MBID-set filter beats per-track 658 ms vs 1,427 ms at 19k items; concat predicate in `HasAnyProviderId` translation defeats the provider index. |
 | v0.5 | 2026-10-21 | OQ-6 resolved: minimal deterministic ambiguity policy — exact normalized-title match first, then lowest Jellyfin item Id; ambiguities counted and logged. Dry-run reference implementation and tests aligned. All design-phase questions resolved; design doc unblocked. |
 | v0.6 | 2026-10-21 | Target platform corrected: 10.11/net9.0 → **12.2/net10.0**. Integration pre-flight (server `/System/Info/Public`) revealed the deployment server runs 12.2.0 — the plugin template's 10.11 default was stale. All load-bearing API facts re-verified against `v12.2` source: UpdatePlaylist replace/null-Name semantics, plugin MVC application parts, `MediaBrowser.Common.Api` policies, `HasAnyProviderId` empty-value matching, MusicBrainzRecording tag mapping — unchanged. Delta: `AddItemToPlaylistAsync` gained `int? position`; new batched `HasAnyProviderIds` noted as future optimization. |
+| v0.7 | 2026-10-21 | Implementation complete (M0–M3, plugin v0.2.0) and integration-tested on the production server — see Appendix A.4. Week identifier now derived as the Monday of the playlist's creation week (structured, no title parsing). |

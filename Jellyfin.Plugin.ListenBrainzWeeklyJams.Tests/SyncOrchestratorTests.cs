@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading;
@@ -48,11 +49,23 @@ public sealed class SyncOrchestratorTests : IDisposable
         Assert.Equal(2, report.Total);
         Assert.Equal(1, report.Matched);
         Assert.Equal(1, report.Missing);
+        // Created 2026-10-13 (Tuesday) -> week identifier is Monday 2026-10-12.
+        Assert.Equal("2026-10-12", report.Week);
         Assert.Equal([item.Id], _playlistWriter.LastItemIds);
         var state = LoadState();
         Assert.Equal(JamsMbid, state.LastSyncedPlaylistMbid);
         Assert.NotNull(state.JellyfinPlaylistId);
         Assert.Equal(SyncOutcome.Updated, state.LastSummary!.Outcome);
+    }
+
+    [Theory]
+    [InlineData("2026-10-13T12:32:24+00:00", "2026-10-12")] // Tuesday -> Monday
+    [InlineData("2026-10-12T00:15:00+00:00", "2026-10-12")] // Monday -> same day
+    [InlineData("2026-10-18T23:59:00+00:00", "2026-10-12")] // Sunday -> previous Monday
+    [InlineData("2026-10-19T09:00:00+00:00", "2026-10-19")] // next Monday -> new week
+    public void WeekIdentifier_IsMondayOfCreationWeek(string createdAt, string expected)
+    {
+        Assert.Equal(expected, SyncOrchestrator.GetWeekIdentifier(DateTimeOffset.Parse(createdAt, CultureInfo.InvariantCulture)));
     }
 
     [Fact]

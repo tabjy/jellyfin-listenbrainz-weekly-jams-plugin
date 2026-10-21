@@ -86,7 +86,7 @@ public sealed class SyncOrchestrator : IDisposable
         var playlists = await _client.GetCreatedForPlaylistsAsync(options.ListenBrainzUsername, cancellationToken)
             .ConfigureAwait(false);
         var selected = WeeklyJamsSelector.SelectLatest(playlists, options.ListenBrainzUsername);
-        var week = selected.CreatedAt.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
+        var week = GetWeekIdentifier(selected.CreatedAt);
 
         var state = _stateStore.Load();
 
@@ -179,6 +179,20 @@ public sealed class SyncOrchestrator : IDisposable
             matchReport.MissingCount,
             matchReport.AmbiguousCount,
             stopwatch.Elapsed);
+    }
+
+    /// <summary>
+    /// Derives the week identifier (the Monday of the playlist's creation
+    /// week) from the structured creation timestamp — never from titles
+    /// (FR-07). ListenBrainz generates weekly playlists on Monday mornings
+    /// but the creation timestamp is often a day later.
+    /// </summary>
+    /// <param name="createdAt">The playlist creation time.</param>
+    /// <returns>The week identifier, e.g. 2026-10-12.</returns>
+    public static string GetWeekIdentifier(DateTimeOffset createdAt)
+    {
+        var daysFromMonday = ((int)createdAt.DayOfWeek + 6) % 7;
+        return createdAt.AddDays(-daysFromMonday).ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
     }
 
     /// <inheritdoc />
