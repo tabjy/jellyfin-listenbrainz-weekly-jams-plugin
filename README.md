@@ -56,6 +56,21 @@ Dashboard → Plugins → ListenBrainz Weekly Jams.
   verified API facts (docs/requirements.md appendices), a benchmarked design
   decision, and an integration test that caught two real bugs before release.
 
+## Vibe coding disclaimer
+
+This plugin was vibe coded — developed in a single AI-assisted session, from
+requirements engineering to release. The mitigations were deliberate: every
+API fact was verified against ListenBrainz's live API and the Jellyfin source
+tree before use, the matcher's query strategy was chosen by benchmark rather
+than intuition, and the release was gated on 57 unit tests plus an integration
+test against a production server — which caught two real bugs (a platform
+mismatch and a Jellyfin 12 `CleanName` quirk) that the unit tests could not
+see.
+
+That process reduces, but does not eliminate, the usual risks of
+AI-generated code. Review it before deploying anywhere you care about. There
+is no warranty; see the GPL-3.0 license.
+
 ## License
 
 GPL-3.0 — see [LICENSE](LICENSE). Note that Jellyfin plugins compiled against
