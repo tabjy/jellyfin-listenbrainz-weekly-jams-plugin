@@ -33,7 +33,19 @@ from your listening history every week.
 
 Requires Jellyfin 12.x.
 
-Until the plugin is published to the catalog, install manually:
+**From the plugin repository (recommended):** add
+
+```
+https://github.com/tabjy/jellyfin-listenbrainz-weekly-jams-plugin/releases/latest/download/manifest.json
+```
+
+as a plugin repository in Dashboard → Plugins → Repositories, then install
+*ListenBrainz Weekly Jams* from the catalog and check for updates there.
+Releases are tagged `v<version>`; each release's `manifest.json` carries the
+full version history. (This requires the repository to be public — the
+manifest and zips are fetched without authentication.)
+
+**Manual install:**
 
 ```shell
 dotnet publish Jellyfin.Plugin.ListenBrainzWeeklyJams/Jellyfin.Plugin.ListenBrainzWeeklyJams.csproj -c Release

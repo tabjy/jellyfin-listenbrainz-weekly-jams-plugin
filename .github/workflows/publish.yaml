@@ -1,18 +1,86 @@
 name: '🚀 Publish Plugin'
 
+# Builds the release with the official Jellyfin Plugin Repository Manager
+# (jprm) — the same tool and action pin the official pipeline uses — and
+# maintains a self-hosted plugin repository manifest on GitHub releases.
+#
+# The org pipeline (jellyfin-meta-plugins reusable workflow) deploys to
+# repo.jellyfin.org and is gated to jellyfin/ org repos by design; this repo
+# self-hosts instead: users register the manifest.json URL from the latest
+# release as a plugin repository in Jellyfin.
 on:
   release:
     types:
       - released
-  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
-  call:
-    uses: jellyfin/jellyfin-meta-plugins/.github/workflows/publish.yaml@master
-    with:
-      version: ${{ github.event.release.tag_name }}
-      is-unstable: ${{ github.event.release.prerelease }}
-    secrets:
-      deploy-host: ${{ secrets.DEPLOY_HOST }}
-      deploy-user: ${{ secrets.DEPLOY_USER }}
-      deploy-key: ${{ secrets.DEPLOY_KEY }}
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: ${{ github.event.release.tag_name }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Build plugin (jprm)
+        # Same pin as jellyfin-meta-plugins' publish workflow.
+        uses: oddstr13/jellyfin-plugin-repository-manager@9497a0a499416cc572ed2e07a391d9f943a37b4d # v1.1.1
+        id: jprm
+        with:
+          dotnet-target: net10.0
+
+      - name: Verify tag matches plugin version
+        run: |
+          python3 - <<'EOF'
+          import re, os, sys
+          version = re.search(r'^version: *"?([^"\n]+)"?', open('build.yaml').read(), re.M).group(1)
+          tag = os.environ['TAG'].removeprefix('v')
+          # Accept 3-part tags for 4-part versions (v0.2.0 == 0.2.0.0).
+          normalized = version.removesuffix('.0') if version.endswith('.0') else version
+          if tag not in (version, normalized):
+              print(f"::error::tag {os.environ['TAG']} does not match build.yaml version {version}")
+              sys.exit(1)
+          EOF
+
+      - name: Fetch previous repository manifest
+        run: |
+          mkdir -p repo
+          rm -f repo/manifest.json
+          PREVIOUS=$(gh release list --json tagName --jq \
+            "[.[] | select(.tagName != env.TAG)] | .[0].tagName" 2>/dev/null || true)
+          if [ -n "$PREVIOUS" ] && [ "$PREVIOUS" != "null" ]; then
+            echo "previous release: $PREVIOUS"
+            gh release download "$PREVIOUS" --pattern manifest.json \
+              --output repo/manifest.json || true
+          fi
+          if [ ! -f repo/manifest.json ]; then
+            python3 -m pip install --quiet jprm
+            python3 -m jprm repo init repo/manifest.json
+          fi
+
+      - name: Update repository manifest (jprm)
+        run: |
+          python3 -m pip install --quiet jprm
+          ZIP="${{ steps.jprm.outputs.artifact }}"
+          ZIP_NAME=$(basename "$ZIP")
+          python3 -m jprm repo add repo/manifest.json "$ZIP" \
+            --plugin-url "https://github.com/${GITHUB_REPOSITORY}/releases/download/${TAG}/${ZIP_NAME}"
+          cat repo/manifest.json
+
+      - name: Attach release assets
+        run: |
+          ZIP="${{ steps.jprm.outputs.artifact }}"
+          md5sum "$ZIP" > "$ZIP.md5"
+          sha256sum "$ZIP" > "$ZIP.sha256"
+          gh release upload "$TAG" "$ZIP" "$ZIP.md5" "$ZIP.sha256" repo/manifest.json --clobber
