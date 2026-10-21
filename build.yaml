@@ -2,8 +2,8 @@
 name: "ListenBrainz Weekly Jams"
 guid: "5b9c524a-b162-4a28-9c6d-3a30e4b33998"
 version: "0.1.0.0"
-targetAbi: "10.11.0.0"
-framework: "net9.0"
+targetAbi: "12.0.0.0"
+framework: "net10.0"
 overview: "Sync your ListenBrainz Weekly Jams playlist into Jellyfin"
 description: >
   Keeps a rolling Jellyfin playlist in sync with the Weekly Jams playlist

@@ -141,7 +141,7 @@ public sealed class PlaylistWriterTests
 
         public Task RemoveUserFromShares(Guid playlistId, Guid userId, PlaylistUserPermissions share) => throw new NotSupportedException();
 
-        public Task AddItemToPlaylistAsync(Guid playlistId, IReadOnlyCollection<Guid> itemIds, Guid userId) => throw new NotSupportedException();
+        public Task AddItemToPlaylistAsync(Guid playlistId, IReadOnlyCollection<Guid> itemIds, int? position, Guid userId) => throw new NotSupportedException();
 
         public Task RemoveItemFromPlaylistAsync(string playlistId, IEnumerable<string> entryIds) => throw new NotSupportedException();
 

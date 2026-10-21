@@ -4,7 +4,7 @@
 |---|---|
 | **Status** | Draft v0.3 — for review |
 | **Date** | 2026-10-20 |
-| **Target** | Jellyfin 10.11 (`targetAbi 10.11.0.0`, verified against `v10.11.9` source), .NET 9 (`net9.0`) |
+| **Target** | Jellyfin 12.2 (`targetAbi 12.0.0.0`, verified against `v12.2` source), .NET 10 (`net10.0`) — retargeted from 10.11 on 2026-10-21 when integration pre-flight showed the deployment server runs 12.2.0 |
 | **Name** | **ListenBrainz Weekly Jams**, assembly `Jellyfin.Plugin.ListenBrainzWeeklyJams` (OQ-1 resolved) |
 
 ---
@@ -356,3 +356,4 @@ Additional observations:
 | v0.3 | 2026-10-20 | Dry-run results recorded (Appendix A.3): 96% match rate, 97.4% tagging coverage, 22% ambiguity rate → OQ-6 added; same-week regeneration and CDN/UA findings; assumption 4 validated. |
 | v0.4 | 2026-10-21 | OQ-5 resolved by measurement (`benchmarks/oq5-bench/`): paged bulk + streaming MBID-set filter beats per-track 658 ms vs 1,427 ms at 19k items; concat predicate in `HasAnyProviderId` translation defeats the provider index. |
 | v0.5 | 2026-10-21 | OQ-6 resolved: minimal deterministic ambiguity policy — exact normalized-title match first, then lowest Jellyfin item Id; ambiguities counted and logged. Dry-run reference implementation and tests aligned. All design-phase questions resolved; design doc unblocked. |
+| v0.6 | 2026-10-21 | Target platform corrected: 10.11/net9.0 → **12.2/net10.0**. Integration pre-flight (server `/System/Info/Public`) revealed the deployment server runs 12.2.0 — the plugin template's 10.11 default was stale. All load-bearing API facts re-verified against `v12.2` source: UpdatePlaylist replace/null-Name semantics, plugin MVC application parts, `MediaBrowser.Common.Api` policies, `HasAnyProviderId` empty-value matching, MusicBrainzRecording tag mapping — unchanged. Delta: `AddItemToPlaylistAsync` gained `int? position`; new batched `HasAnyProviderIds` noted as future optimization. |

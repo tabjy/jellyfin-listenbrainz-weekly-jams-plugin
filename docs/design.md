@@ -332,7 +332,11 @@ Continues the numbering from requirements D-1…D-8.
 
 ## Appendix B — Verified Jellyfin 10.11 API cheat sheet
 
-From `v10.11.9` source (see requirements Appendix A for LB facts):
+From `v10.11.9` source (see requirements Appendix A for LB facts). Re-verified
+against `v12.2` on 2026-10-21 after the retarget: all semantics below are
+unchanged; the only deltas are `AddItemToPlaylistAsync` gaining an
+`int? position` parameter and a new batched `HasAnyProviderIds`
+(`Dictionary<string, string[]>`) query option (candidate OQ-5 optimization).
 
 ```csharp
 // IPlaylistManager (MediaBrowser.Controller/Playlists/IPlaylistManager.cs)

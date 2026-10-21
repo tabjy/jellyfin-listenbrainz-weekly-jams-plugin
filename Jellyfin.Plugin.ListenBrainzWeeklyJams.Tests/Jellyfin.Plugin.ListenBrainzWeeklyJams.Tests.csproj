@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>false</IsPackable>
@@ -20,8 +20,8 @@
   <!-- The plugin excludes these from its runtime assets (the server provides
        them); tests need the actual assemblies present in the output. -->
   <ItemGroup>
-    <PackageReference Include="Jellyfin.Controller" Version="10.11.9" />
-    <PackageReference Include="Jellyfin.Model" Version="10.11.9" />
+    <PackageReference Include="Jellyfin.Controller" Version="12.2.0" />
+    <PackageReference Include="Jellyfin.Model" Version="12.2.0" />
   </ItemGroup>
 
   <ItemGroup>
