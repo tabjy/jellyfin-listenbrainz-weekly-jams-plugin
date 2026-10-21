@@ -389,10 +389,12 @@ def match_track(track: LbTrack, mbid_map: dict, name_map: dict, name_map_b: dict
 
 
 def pick_candidate(candidates: list[dict], track: LbTrack) -> dict:
+    """OQ-6 ambiguity policy: exact normalized-title match first, then
+    deterministic order by Jellyfin item Id."""
     if len(candidates) == 1:
         return candidates[0]
     exact = [c for c in candidates if norm(c.get("Name") or "") == norm(track.title)]
-    return sorted(exact or candidates, key=lambda c: c.get("Name") or "")[0]
+    return sorted(exact or candidates, key=lambda c: c.get("Id") or "")[0]
 
 
 # --------------------------------------------------------------------------- #

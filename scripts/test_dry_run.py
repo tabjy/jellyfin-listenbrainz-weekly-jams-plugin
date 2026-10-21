@@ -107,6 +107,33 @@ class MatcherTestCase(unittest.TestCase):
         r = dr.match_track(track, mbid_map, name_map, name_map_b)
         self.assertEqual(r.item["Id"], "orig")
 
+    # --- OQ-6: ambiguity policy (exact title first, then lowest item Id) -----
+
+    def test_oq6_exact_title_beats_id_order(self):
+        # candidate with the exact title wins even if its Id sorts later
+        items = [
+            {"Id": "aaa", "Name": "Track (Live)", "Artists": ["A"],
+             "ProviderIds": {"MusicBrainzRecording": MBID}},
+            {"Id": "zzz", "Name": "Track", "Artists": ["A"],
+             "ProviderIds": {"MusicBrainzRecording": MBID}},
+        ]
+        mbid_map, _, _, _ = dr.build_maps(items)
+        r = dr.match_track(dr.LbTrack(1, MBID, "Track", "A", "X"), mbid_map, {}, {})
+        self.assertEqual(r.strategy, "MBID")
+        self.assertEqual(r.item["Id"], "zzz")
+
+    def test_oq6_identical_titles_pick_lowest_id(self):
+        items = [
+            {"Id": "bbb", "Name": "Track", "Artists": ["A"],
+             "ProviderIds": {"MusicBrainzRecording": MBID}},
+            {"Id": "aaa", "Name": "Track", "Artists": ["A"],
+             "ProviderIds": {"MusicBrainzRecording": MBID}},
+        ]
+        mbid_map, _, _, _ = dr.build_maps(items)
+        r = dr.match_track(dr.LbTrack(1, MBID, "Track", "A", "X"), mbid_map, {}, {})
+        self.assertTrue(r.ambiguous)
+        self.assertEqual(r.item["Id"], "aaa")
+
     # --- normalization ------------------------------------------------------
 
     def test_norm(self):
