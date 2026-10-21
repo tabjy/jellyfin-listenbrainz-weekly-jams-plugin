@@ -1,0 +1,76 @@
+{
+  "count": 25,
+  "offset": 25,
+  "playlist_count": 28,
+  "playlists": [
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist features recordings that were listened to by users similar to 9cxndy in 2014.\n                It is a discovery playlist that aims to introduce you to new music that other similar users\n                enjoy. It may require more active listening and may contain tracks that are not to your taste.\n            </p>\n            <p>\n                The users similar to you who contributed to this playlist: <a href=\"https://listenbrainz.org/user/cral\">cral</a>, <a href=\"https://listenbrainz.org/user/callen162\">callen162</a>, <a href=\"https://listenbrainz.org/user/alexiusIII\">alexiusIII</a>.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2014Playlists\">Year in Music 2014 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-21T22:05:09.483703+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-missed-recordings-of-2014"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-21T22:05:09.483703+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/fe6d3b9b-b772-4822-9d94-909b8b1357e2",
+        "title": "Top Missed Recordings of 2014 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist contains the top tracks for 9cxndy that were first listened to in 2013.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2013Playlists\">Year in Music 2013 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-21T21:25:03.189062+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-discoveries-of-2013"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-21T21:25:03.189062+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/2d923e20-5c2e-421f-9642-090180d795de",
+        "title": "Top Discoveries of 2013 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist features recordings that were listened to by users similar to 9cxndy in 2013.\n                It is a discovery playlist that aims to introduce you to new music that other similar users\n                enjoy. It may require more active listening and may contain tracks that are not to your taste.\n            </p>\n            <p>\n                The users similar to you who contributed to this playlist: <a href=\"https://listenbrainz.org/user/softpudding000\">softpudding000</a>, <a href=\"https://listenbrainz.org/user/venomquartz\">venomquartz</a>, <a href=\"https://listenbrainz.org/user/izzuthug\">izzuthug</a>.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2013Playlists\">Year in Music 2013 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-21T21:19:30.575089+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-missed-recordings-of-2013"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-21T21:19:30.575089+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/88400bb2-77b5-48c6-9cb4-eb698e391f1c",
+        "title": "Top Missed Recordings of 2013 for 9cxndy",
+        "track": []
+      }
+    }
+  ]
+}

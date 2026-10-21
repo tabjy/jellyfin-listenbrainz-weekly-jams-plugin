@@ -1,0 +1,586 @@
+{
+  "count": 25,
+  "offset": 0,
+  "playlist_count": 28,
+  "playlists": [
+    {
+      "playlist": {
+        "annotation": "<p>The ListenBrainz Weekly Exploration playlist helps you discover new music! \n    It may require active listening and skips. The playlist features tracks you haven't heard before, \n    selected by a collaborative filtering algorithm.</p>\n\n    <p>Updated every Monday morning based on your timezone.</p>\n",
+        "creator": "listenbrainz",
+        "date": "2026-09-14T00:21:30.144679+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "weekly-exploration"
+              },
+              "expires_at": "2026-09-28T00:21:29.388561+00:00"
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-09-14T00:21:30.144679+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/196d6969-aa6c-4299-bfa6-7d7d9b67b505",
+        "title": "Weekly Exploration for 9cxndy, week of 2026-09-14 Mon",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "<p>The ListenBrainz Weekly Jams playlist features songs that you have listened to before, \n    arranged into a comfortable playlist that doesn't require active listening on your part.</p>\n\n    <p>Generated on Monday morning, in accordance with your timezone settings.</p>\n",
+        "creator": "listenbrainz",
+        "date": "2026-09-14T00:12:50.142942+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "weekly-jams"
+              },
+              "expires_at": "2026-09-28T00:12:50.143495+00:00"
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-09-14T00:12:50.142942+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/2d999bae-4b3a-490b-9ef2-e323698e9051",
+        "title": "Weekly Jams for 9cxndy, week of 2026-09-14 Mon",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "<p>The ListenBrainz Weekly Exploration playlist helps you discover new music! \n    It may require active listening and skips. The playlist features tracks you haven't heard before, \n    selected by a collaborative filtering algorithm.</p>\n\n    <p>Updated every Monday morning based on your timezone.</p>\n",
+        "creator": "listenbrainz",
+        "date": "2026-08-24T01:02:31.674549+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "weekly-exploration"
+              },
+              "expires_at": "2026-09-07T01:02:31.670067+00:00"
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-08-24T01:02:31.674549+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/8812e49a-0a00-4d82-a998-3b3d3fc5ed61",
+        "title": "Weekly Exploration for 9cxndy, week of 2026-08-24 Mon",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "<p>The ListenBrainz Weekly Jams playlist features songs that you have listened to before, \n    arranged into a comfortable playlist that doesn't require active listening on your part.</p>\n\n    <p>Generated on Monday morning, in accordance with your timezone settings.</p>\n",
+        "creator": "listenbrainz",
+        "date": "2026-08-24T00:31:27.343214+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "weekly-jams"
+              },
+              "expires_at": "2026-09-07T00:31:27.341383+00:00"
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-08-24T00:31:27.343214+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/d51916ea-5e21-4307-bf5b-264dbe2f5027",
+        "title": "Weekly Jams for 9cxndy, week of 2026-08-24 Mon",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist contains the top tracks for 9cxndy that were first listened to in 2025.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2025Playlists\">Year in Music 2025 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T10:49:46.255363+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-discoveries-of-2025"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T10:49:46.255363+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/ead0df7b-a676-4dec-a5df-d99d94cdc193",
+        "title": "Top Discoveries of 2025 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist features recordings that were listened to by users similar to 9cxndy in 2025.\n                It is a discovery playlist that aims to introduce you to new music that other similar users\n                enjoy. It may require more active listening and may contain tracks that are not to your taste.\n            </p>\n            <p>\n                The users similar to you who contributed to this playlist: <a href=\"https://listenbrainz.org/user/Paul_mag_Cookies\">Paul_mag_Cookies</a>, <a href=\"https://listenbrainz.org/user/uglycustard\">uglycustard</a>, <a href=\"https://listenbrainz.org/user/linc0646\">linc0646</a>.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2025Playlists\">Year in Music 2025 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T10:31:50.814528+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-missed-recordings-of-2025"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T10:31:50.814528+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/1ddf7f05-94ce-4e64-90f3-77a1b5d5f7c7",
+        "title": "Top Missed Recordings of 2025 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist contains the top tracks for 9cxndy that were first listened to in 2024.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2024Playlists\">Year in Music 2024 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T08:51:38.062235+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-discoveries-of-2024"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T08:51:38.062235+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/e3a0da5d-ff75-4f19-b458-d82e03b8c585",
+        "title": "Top Discoveries of 2024 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist features recordings that were listened to by users similar to 9cxndy in 2024.\n                It is a discovery playlist that aims to introduce you to new music that other similar users\n                enjoy. It may require more active listening and may contain tracks that are not to your taste.\n            </p>\n            <p>\n                The users similar to you who contributed to this playlist: <a href=\"https://listenbrainz.org/user/ilovemycatyay\">ilovemycatyay</a>, <a href=\"https://listenbrainz.org/user/Justaway\">Justaway</a>, <a href=\"https://listenbrainz.org/user/Yuze\">Yuze</a>.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2024Playlists\">Year in Music 2024 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T08:38:22.287179+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-missed-recordings-of-2024"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T08:38:22.287179+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/d3c8271f-9517-4ca0-b3a0-4166d7167845",
+        "title": "Top Missed Recordings of 2024 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist contains the top tracks for 9cxndy that were first listened to in 2023.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2023Playlists\">Year in Music 2023 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T07:20:48.688291+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-discoveries-of-2023"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T07:20:48.688291+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/b2aba546-374c-49ce-af76-93e85e544822",
+        "title": "Top Discoveries of 2023 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist features recordings that were listened to by users similar to 9cxndy in 2023.\n                It is a discovery playlist that aims to introduce you to new music that other similar users\n                enjoy. It may require more active listening and may contain tracks that are not to your taste.\n            </p>\n            <p>\n                The users similar to you who contributed to this playlist: <a href=\"https://listenbrainz.org/user/Eai\">Eai</a>, <a href=\"https://listenbrainz.org/user/AdamSkI2003\">AdamSkI2003</a>, <a href=\"https://listenbrainz.org/user/witchbops\">witchbops</a>.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2023Playlists\">Year in Music 2023 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T07:08:18.344437+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-missed-recordings-of-2023"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T07:08:18.344437+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/81471790-441a-4455-acc3-0ddc63f1cc12",
+        "title": "Top Missed Recordings of 2023 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist contains the top tracks for 9cxndy that were first listened to in 2022.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2022Playlists\">Year in Music 2022 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T05:58:53.689496+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-discoveries-of-2022"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T05:58:53.689496+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/08f7feba-e265-4db6-9074-c1e970be1e33",
+        "title": "Top Discoveries of 2022 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist features recordings that were listened to by users similar to 9cxndy in 2022.\n                It is a discovery playlist that aims to introduce you to new music that other similar users\n                enjoy. It may require more active listening and may contain tracks that are not to your taste.\n            </p>\n            <p>\n                The users similar to you who contributed to this playlist: <a href=\"https://listenbrainz.org/user/Eai\">Eai</a>, <a href=\"https://listenbrainz.org/user/nullobsi\">nullobsi</a>, <a href=\"https://listenbrainz.org/user/soopyc\">soopyc</a>.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2022Playlists\">Year in Music 2022 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T05:46:45.978931+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-missed-recordings-of-2022"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T05:46:45.978931+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/6118af53-672b-46f5-93df-7bc86119602a",
+        "title": "Top Missed Recordings of 2022 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist contains the top tracks for 9cxndy that were first listened to in 2021.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2021Playlists\">Year in Music 2021 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T04:39:35.153367+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-discoveries-of-2021"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T04:39:35.153367+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/2a479e8c-a91f-44c2-a0c3-ad895435a092",
+        "title": "Top Discoveries of 2021 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist features recordings that were listened to by users similar to 9cxndy in 2021.\n                It is a discovery playlist that aims to introduce you to new music that other similar users\n                enjoy. It may require more active listening and may contain tracks that are not to your taste.\n            </p>\n            <p>\n                The users similar to you who contributed to this playlist: <a href=\"https://listenbrainz.org/user/crayonbro\">crayonbro</a>, <a href=\"https://listenbrainz.org/user/alxr\">alxr</a>, <a href=\"https://listenbrainz.org/user/Somasis\">Somasis</a>.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2021Playlists\">Year in Music 2021 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T04:31:49.058817+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-missed-recordings-of-2021"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T04:31:49.058817+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/4b4a1c63-0e3a-4751-8572-f4102eea3162",
+        "title": "Top Missed Recordings of 2021 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist contains the top tracks for 9cxndy that were first listened to in 2020.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2020Playlists\">Year in Music 2020 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T03:36:39.704758+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-discoveries-of-2020"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T03:36:39.704758+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/efd23c76-e022-4bb2-aee3-24cd7b628347",
+        "title": "Top Discoveries of 2020 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist features recordings that were listened to by users similar to 9cxndy in 2020.\n                It is a discovery playlist that aims to introduce you to new music that other similar users\n                enjoy. It may require more active listening and may contain tracks that are not to your taste.\n            </p>\n            <p>\n                The users similar to you who contributed to this playlist: <a href=\"https://listenbrainz.org/user/kooper100\">kooper100</a>, <a href=\"https://listenbrainz.org/user/misona\">misona</a>, <a href=\"https://listenbrainz.org/user/BaukeXYZ\">BaukeXYZ</a>.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2020Playlists\">Year in Music 2020 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T03:27:10.662954+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-missed-recordings-of-2020"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T03:27:10.662954+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/1a4080d8-1de1-43b9-94f9-c1ea9868813a",
+        "title": "Top Missed Recordings of 2020 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist contains the top tracks for 9cxndy that were first listened to in 2018.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2018Playlists\">Year in Music 2018 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T01:35:48.807037+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-discoveries-of-2018"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T01:35:48.807037+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/cfd610c0-6ce2-4c7e-ae05-eedbf4c21a67",
+        "title": "Top Discoveries of 2018 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist features recordings that were listened to by users similar to 9cxndy in 2018.\n                It is a discovery playlist that aims to introduce you to new music that other similar users\n                enjoy. It may require more active listening and may contain tracks that are not to your taste.\n            </p>\n            <p>\n                The users similar to you who contributed to this playlist: <a href=\"https://listenbrainz.org/user/Gohla\">Gohla</a>, <a href=\"https://listenbrainz.org/user/archivist-bias\">archivist-bias</a>, <a href=\"https://listenbrainz.org/user/wilmer2000\">wilmer2000</a>.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2018Playlists\">Year in Music 2018 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T01:28:15.420990+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-missed-recordings-of-2018"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T01:28:15.420990+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/2a1d1807-53b4-4ecf-9745-2ff766184e90",
+        "title": "Top Missed Recordings of 2018 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist contains the top tracks for 9cxndy that were first listened to in 2017.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2017Playlists\">Year in Music 2017 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T00:38:01.864213+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-discoveries-of-2017"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T00:38:01.864213+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/7b578ef3-a600-4ec5-a40b-fbb4acc60803",
+        "title": "Top Discoveries of 2017 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist features recordings that were listened to by users similar to 9cxndy in 2017.\n                It is a discovery playlist that aims to introduce you to new music that other similar users\n                enjoy. It may require more active listening and may contain tracks that are not to your taste.\n            </p>\n            <p>\n                The users similar to you who contributed to this playlist: <a href=\"https://listenbrainz.org/user/macuilxochitl\">macuilxochitl</a>, <a href=\"https://listenbrainz.org/user/ALBEI2T\">ALBEI2T</a>, <a href=\"https://listenbrainz.org/user/nikiforovpizza\">nikiforovpizza</a>.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2017Playlists\">Year in Music 2017 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T00:30:52.598147+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-missed-recordings-of-2017"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T00:30:52.598147+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/32072195-37eb-44ad-bac7-0e4dfcd03d03",
+        "title": "Top Missed Recordings of 2017 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist contains the top tracks for 9cxndy that were first listened to in 2016.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2016Playlists\">Year in Music 2016 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-21T23:45:45.048871+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-discoveries-of-2016"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-21T23:45:45.048871+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/0d269b41-e6c9-4bbe-bb90-c07663c190b4",
+        "title": "Top Discoveries of 2016 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist features recordings that were listened to by users similar to 9cxndy in 2016.\n                It is a discovery playlist that aims to introduce you to new music that other similar users\n                enjoy. It may require more active listening and may contain tracks that are not to your taste.\n            </p>\n            <p>\n                The users similar to you who contributed to this playlist: <a href=\"https://listenbrainz.org/user/Neon5\">Neon5</a>, <a href=\"https://listenbrainz.org/user/Sp4rkR4t\">Sp4rkR4t</a>, <a href=\"https://listenbrainz.org/user/Dellywood\">Dellywood</a>.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2016Playlists\">Year in Music 2016 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-21T23:39:17.944403+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-missed-recordings-of-2016"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-21T23:39:17.944403+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/dfee2018-7da7-450c-84ca-e0af20f7c1d3",
+        "title": "Top Missed Recordings of 2016 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist contains the top tracks for 9cxndy that were first listened to in 2015.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2015Playlists\">Year in Music 2015 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-21T22:58:17.540724+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-discoveries-of-2015"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-21T22:58:17.540724+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/db322480-4d13-41aa-9ea9-f9b2b8cfecdc",
+        "title": "Top Discoveries of 2015 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist features recordings that were listened to by users similar to 9cxndy in 2015.\n                It is a discovery playlist that aims to introduce you to new music that other similar users\n                enjoy. It may require more active listening and may contain tracks that are not to your taste.\n            </p>\n            <p>\n                The users similar to you who contributed to this playlist: <a href=\"https://listenbrainz.org/user/bltsndwch\">bltsndwch</a>, <a href=\"https://listenbrainz.org/user/thevar1able\">thevar1able</a>, <a href=\"https://listenbrainz.org/user/cramrakishly\">cramrakishly</a>.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2015Playlists\">Year in Music 2015 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-21T22:51:54.111676+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-missed-recordings-of-2015"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-21T22:51:54.111676+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/18c68f44-a95a-4716-aedb-456f65c6cd37",
+        "title": "Top Missed Recordings of 2015 for 9cxndy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist contains the top tracks for 9cxndy that were first listened to in 2014.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2014Playlists\">Year in Music 2014 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-21T22:11:17.513975+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-discoveries-of-2014"
+              }
+            },
+            "created_for": "9cxndy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-21T22:11:17.513975+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/c3cd7144-c01c-4262-bd25-a74f457ef550",
+        "title": "Top Discoveries of 2014 for 9cxndy",
+        "track": []
+      }
+    }
+  ]
+}

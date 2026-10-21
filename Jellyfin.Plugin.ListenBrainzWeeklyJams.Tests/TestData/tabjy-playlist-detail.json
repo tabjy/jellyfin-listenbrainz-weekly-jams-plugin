@@ -1,0 +1,1601 @@
+{
+  "playlist": {
+    "annotation": "<p>The ListenBrainz Weekly Jams playlist features songs that you have listened to before, \n    arranged into a comfortable playlist that doesn't require active listening on your part.</p>\n\n    <p>Generated on Monday morning, in accordance with your timezone settings.</p>\n",
+    "creator": "listenbrainz",
+    "date": "2026-10-13T12:32:24.063555+00:00",
+    "extension": {
+      "https://musicbrainz.org/doc/jspf#playlist": {
+        "additional_metadata": {
+          "algorithm_metadata": {
+            "source_patch": "weekly-jams"
+          },
+          "expires_at": "2026-10-27T12:32:20.941345+00:00"
+        },
+        "created_for": "tabjy",
+        "creator": "listenbrainz",
+        "last_modified_at": "2026-10-13T12:32:24.063555+00:00",
+        "public": true
+      }
+    },
+    "identifier": "https://listenbrainz.org/playlist/e3d029d6-d8bc-4443-ad64-79fc442c1088",
+    "title": "Weekly Jams for tabjy, week of 2026-10-12 Mon",
+    "track": [
+      {
+        "album": "SEVEN GIRLS' DISCORD",
+        "creator": "wowaka",
+        "duration": 191000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "wowaka",
+                  "artist_mbid": "85642e3c-8e39-437c-8b4f-ae4a16d19d21",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 45723110120,
+              "caa_release_mbid": "d0b9e641-a9d7-455b-998b-bea0f23850ff"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/85642e3c-8e39-437c-8b4f-ae4a16d19d21"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/71d6ceac-9589-4235-a419-6d06e29429d1"
+        ],
+        "title": "ローリンガール"
+      },
+      {
+        "album": "Ex-Otogibanashi",
+        "creator": "ryo (supercell), かぐや(cv.夏吉ゆうこ) & 月見ヤチヨ(cv.早見沙織)",
+        "duration": 226734,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "ryo (supercell)",
+                  "artist_mbid": "aabc3d78-218b-4e98-95b7-fe6388adef2d",
+                  "join_phrase": ", "
+                },
+                {
+                  "artist_credit_name": "かぐや",
+                  "artist_mbid": "2547cd70-4663-4302-b0e4-58b8c4a963f3",
+                  "join_phrase": "(cv."
+                },
+                {
+                  "artist_credit_name": "夏吉ゆうこ",
+                  "artist_mbid": "34b86f60-657c-4f99-9b0a-2233644c3a19",
+                  "join_phrase": ") & "
+                },
+                {
+                  "artist_credit_name": "月見ヤチヨ",
+                  "artist_mbid": "6861c875-4ce1-4267-ab54-1a37f9886d4d",
+                  "join_phrase": "(cv."
+                },
+                {
+                  "artist_credit_name": "早見沙織",
+                  "artist_mbid": "7c287fc8-8a14-49fc-8eca-84598834eb1d",
+                  "join_phrase": ")"
+                }
+              ],
+              "caa_id": 44580859451,
+              "caa_release_mbid": "9f9896da-dc4c-498e-9b8e-35b4c71116c9"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/aabc3d78-218b-4e98-95b7-fe6388adef2d",
+              "https://musicbrainz.org/artist/2547cd70-4663-4302-b0e4-58b8c4a963f3",
+              "https://musicbrainz.org/artist/34b86f60-657c-4f99-9b0a-2233644c3a19",
+              "https://musicbrainz.org/artist/6861c875-4ce1-4267-ab54-1a37f9886d4d",
+              "https://musicbrainz.org/artist/7c287fc8-8a14-49fc-8eca-84598834eb1d"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/e72a4e24-f31d-463f-bc1f-415ebf335789"
+        ],
+        "title": "ワールドイズマイン (かぐや&月見ヤチヨ ver.) [CPK! Remix]"
+      },
+      {
+        "album": "TRON: Ares: Original Motion Picture Soundtrack",
+        "creator": "Nine Inch Nails",
+        "duration": 179960,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Nine Inch Nails",
+                  "artist_mbid": "b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 42529599191,
+              "caa_release_mbid": "7a66bb5b-6fc9-4725-9bff-d2803781af01"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/b7ffd2af-418f-4be2-bdd1-22f8b48613da"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/6059dd88-70c2-4924-a109-f70088cfccd0"
+        ],
+        "title": "This Changes Everything"
+      },
+      {
+        "album": "20th century Boys & Girls Ⅱ ～20世紀少年少女2～",
+        "creator": "高橋洋子",
+        "duration": 278000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "高橋洋子",
+                  "artist_mbid": "7004bc31-23ee-4216-8d74-0d230e88079f",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 20686427578,
+              "caa_release_mbid": "0cc76aef-e050-4175-a83c-3ebc69058367"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/7004bc31-23ee-4216-8d74-0d230e88079f"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/96375d64-844f-47da-ab16-c07ffeb749a1"
+        ],
+        "title": "残酷な天使のテーゼ"
+      },
+      {
+        "album": "テオ",
+        "creator": "Omoi feat. 初音ミク",
+        "duration": 210000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Omoi",
+                  "artist_mbid": "c932914d-88b6-4eea-b937-43c834fe0077",
+                  "join_phrase": " feat. "
+                },
+                {
+                  "artist_credit_name": "初音ミク",
+                  "artist_mbid": "130d679a-9a92-4373-8348-0800b6b93a30",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 45676214608,
+              "caa_release_mbid": "bb444bb9-137f-4aeb-89aa-5e5b748389ed"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/c932914d-88b6-4eea-b937-43c834fe0077",
+              "https://musicbrainz.org/artist/130d679a-9a92-4373-8348-0800b6b93a30"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/256724b9-7b39-43b1-a6fd-c178494b9cee"
+        ],
+        "title": "テオ"
+      },
+      {
+        "album": "コインロッカーベイビー",
+        "creator": "MARETU",
+        "duration": 240000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "MARETU",
+                  "artist_mbid": "cda1d655-a98c-42ae-8de3-a0a78000741e",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 22426838426,
+              "caa_release_mbid": "ea862c21-d3f6-4daa-b1c0-6013aab448ff"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/cda1d655-a98c-42ae-8de3-a0a78000741e"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/fbd8b479-63c9-480b-be92-3be46b31fbf9"
+        ],
+        "title": "渇き"
+      },
+      {
+        "album": "Demon Days",
+        "creator": "Gorillaz",
+        "duration": 293306,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Gorillaz",
+                  "artist_mbid": "e21857d5-3256-4547-afb3-4b6ded592596",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 4436715369,
+              "caa_release_mbid": "2968b394-7ca8-3b6a-a3ec-a0239adb01c9"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/e21857d5-3256-4547-afb3-4b6ded592596"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/ae28e0d1-73ab-4292-a8f5-fa28dffec415"
+        ],
+        "title": "Every Planet We Reach Is Dead"
+      },
+      {
+        "album": "Once in a Long, Long While…",
+        "creator": "Low Roar",
+        "duration": 373000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Low Roar",
+                  "artist_mbid": "2921ca1d-206e-411a-8d2e-e12494dcfa9a",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 16424556444,
+              "caa_release_mbid": "dc1e8f89-4188-4705-8a4d-7903699cfd26"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/2921ca1d-206e-411a-8d2e-e12494dcfa9a"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/54d93015-3b44-4ad1-aa4e-f9773622ebe5"
+        ],
+        "title": "Don’t Be So Serious"
+      },
+      {
+        "album": "DAISAN WAVE",
+        "creator": "みきとP feat. 鏡音リン V4X (Power)",
+        "duration": 229000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "みきとP",
+                  "artist_mbid": "b839783f-03b2-46a2-a799-7f2299a5c215",
+                  "join_phrase": " feat. "
+                },
+                {
+                  "artist_credit_name": "鏡音リン V4X (Power)",
+                  "artist_mbid": "e1aa2807-9cdf-412b-a390-2103cfc725ef",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 38765844861,
+              "caa_release_mbid": "fc3bf231-6149-47d6-bcaf-e53644ed38db"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/b839783f-03b2-46a2-a799-7f2299a5c215",
+              "https://musicbrainz.org/artist/e1aa2807-9cdf-412b-a390-2103cfc725ef"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/75f105fe-d08b-40a9-91fb-9a1bfc9e4467"
+        ],
+        "title": "ロキ"
+      },
+      {
+        "album": "Animals",
+        "creator": "Pink Floyd",
+        "duration": 620133,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Pink Floyd",
+                  "artist_mbid": "83d91898-7763-47d7-b03b-b92132375c47",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 34362106178,
+              "caa_release_mbid": "794fc579-651c-4446-b5a7-09bab5ff51fa"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/83d91898-7763-47d7-b03b-b92132375c47"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/dc014ebe-f3ae-444f-bdec-791e9614eadd"
+        ],
+        "title": "Sheep"
+      },
+      {
+        "album": "A Moon Shaped Pool",
+        "creator": "Radiohead",
+        "duration": 384000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Radiohead",
+                  "artist_mbid": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 13521174881,
+              "caa_release_mbid": "5f81ffe8-fd6c-409e-9441-6a978270d9fd"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/7488e7c3-86b8-4755-a167-b053adecae13"
+        ],
+        "title": "Daydreaming"
+      },
+      {
+        "album": "[Led Zeppelin IV]",
+        "creator": "Led Zeppelin",
+        "duration": 482000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Led Zeppelin",
+                  "artist_mbid": "678d88b2-87b0-403b-b63d-5da7465aecc3",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 26862237165,
+              "caa_release_mbid": "959621bf-6536-4f37-a60d-148168d98700"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/678d88b2-87b0-403b-b63d-5da7465aecc3"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/ccfdd180-22e1-49b9-bd81-b5fcf2c6474e"
+        ],
+        "title": "Stairway to Heaven"
+      },
+      {
+        "album": "POCKET PARK",
+        "creator": "松原みき",
+        "duration": 311626,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "松原みき",
+                  "artist_mbid": "994c1efe-ab1c-4b1f-a2b7-01758ef963b9",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 31604873636,
+              "caa_release_mbid": "250f01a8-8324-4207-b0b5-71ff0955ed15"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/994c1efe-ab1c-4b1f-a2b7-01758ef963b9"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/0ee3fcdd-44a1-451a-a50d-50242e48419c"
+        ],
+        "title": "真夜中のドア／Stay With Me"
+      },
+      {
+        "album": "アンチサイクロン",
+        "creator": "稲葉曇",
+        "duration": 197990,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "稲葉曇",
+                  "artist_mbid": "46196b9c-affa-4616-b53b-e967c8bd70e0",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 32606084527,
+              "caa_release_mbid": "20707c11-c303-4f83-b19e-f726f67558db"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/46196b9c-affa-4616-b53b-e967c8bd70e0"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/007853dc-0de3-429d-83fd-d5321c8fc28d"
+        ],
+        "title": "パスカルビーツ"
+      },
+      {
+        "album": "GHOST",
+        "creator": "DECO*27",
+        "duration": 270000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "DECO*27",
+                  "artist_mbid": "bd247ab3-c22d-4b5d-a6fd-437771cacbbe",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 34462935365,
+              "caa_release_mbid": "3ab7f368-dc99-469b-8b54-bad992b48bf2"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/bd247ab3-c22d-4b5d-a6fd-437771cacbbe"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/d5f80dc0-261c-4d22-b079-a7630b0a082f"
+        ],
+        "title": "妄想感傷代償連盟"
+      },
+      {
+        "album": "Shelter",
+        "creator": "Porter Robinson & Madeon",
+        "duration": 335000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Porter Robinson",
+                  "artist_mbid": "4ae36ade-1798-48c4-b06b-cc68b7d3d83f",
+                  "join_phrase": " & "
+                },
+                {
+                  "artist_credit_name": "Madeon",
+                  "artist_mbid": "fa1de503-aba7-41fa-a1ed-371b3e87a717",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 16479680984,
+              "caa_release_mbid": "ccc261b9-e4cc-4965-81b8-7c92a5d28601"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/4ae36ade-1798-48c4-b06b-cc68b7d3d83f",
+              "https://musicbrainz.org/artist/fa1de503-aba7-41fa-a1ed-371b3e87a717"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/1dff3de4-e6b6-4638-8c84-3043131c9989"
+        ],
+        "title": "Shelter"
+      },
+      {
+        "album": "Who’s Next",
+        "creator": "The Who",
+        "duration": 300226,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "The Who",
+                  "artist_mbid": "9fdaa16b-a6c4-4831-b87c-bc9ca8ce7eaa",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 26381610827,
+              "caa_release_mbid": "f94ba9c2-8b66-4827-abd2-2deb7e8aa42d"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/9fdaa16b-a6c4-4831-b87c-bc9ca8ce7eaa"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/a6081bc1-2a76-4984-b21f-38bc3dcca3a5"
+        ],
+        "title": "Baba O’Riley"
+      },
+      {
+        "album": "supercell",
+        "creator": "supercell feat. 初音ミク",
+        "duration": 237000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "supercell",
+                  "artist_mbid": "9b15ff5e-5bd1-43c2-821d-e31240aad334",
+                  "join_phrase": " feat. "
+                },
+                {
+                  "artist_credit_name": "初音ミク",
+                  "artist_mbid": "130d679a-9a92-4373-8348-0800b6b93a30",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 28729378048,
+              "caa_release_mbid": "18584c5e-f13a-42d0-af57-90b10d88545f"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/9b15ff5e-5bd1-43c2-821d-e31240aad334",
+              "https://musicbrainz.org/artist/130d679a-9a92-4373-8348-0800b6b93a30"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/87435d03-f4a9-4fb3-93d8-f55166d5f7cc"
+        ],
+        "title": "恋は戦争"
+      },
+      {
+        "album": "Out of the Blue",
+        "creator": "Electric Light Orchestra",
+        "duration": 304453,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Electric Light Orchestra",
+                  "artist_mbid": "0c502791-4ee9-4c5f-9696-0602b721ff3b",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 12414410936,
+              "caa_release_mbid": "e470249c-66e3-4565-a0cd-6b052bde709e"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/0c502791-4ee9-4c5f-9696-0602b721ff3b"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/6e33056b-2a34-4ed0-b49c-f7a8ae2c5bcc"
+        ],
+        "title": "Mr. Blue Sky"
+      },
+      {
+        "album": "Innuendo",
+        "creator": "Queen",
+        "duration": 272000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Queen",
+                  "artist_mbid": "0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 29058719358,
+              "caa_release_mbid": "a7704334-690a-44f7-a5d4-13000287e2d7"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/e4678e4a-3cb1-497b-9b66-a0c1fec1a85e"
+        ],
+        "title": "The Show Must Go On"
+      },
+      {
+        "album": "Interstellar",
+        "creator": "Hans Zimmer",
+        "duration": 341400,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Hans Zimmer",
+                  "artist_mbid": "e6de1f3b-6484-491c-88dd-6d619f142abc",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 8785956680,
+              "caa_release_mbid": "3dd79a9c-ede6-4d05-8735-5bb51a3e505b"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/e6de1f3b-6484-491c-88dd-6d619f142abc"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/12d5b2a8-d762-48a5-a1f5-e98fefe0d9e2"
+        ],
+        "title": "Dust"
+      },
+      {
+        "album": "S/S17",
+        "creator": "Anamanaguchi feat. Hatsune Miku",
+        "duration": 218328,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Anamanaguchi",
+                  "artist_mbid": "e4d7cfe5-0bed-46cf-acad-ab9a4dcb7aa6",
+                  "join_phrase": " feat. "
+                },
+                {
+                  "artist_credit_name": "Hatsune Miku",
+                  "artist_mbid": "130d679a-9a92-4373-8348-0800b6b93a30",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 44558451595,
+              "caa_release_mbid": "1db4fd2b-9441-4be4-bd02-959d5c007d9e"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/e4d7cfe5-0bed-46cf-acad-ab9a4dcb7aa6",
+              "https://musicbrainz.org/artist/130d679a-9a92-4373-8348-0800b6b93a30"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/443ecbef-3e12-47c2-9a20-56a4987ee017"
+        ],
+        "title": "Miku (Japanese version)"
+      },
+      {
+        "album": "夜に駆ける",
+        "creator": "YOASOBI",
+        "duration": 258839,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "YOASOBI",
+                  "artist_mbid": "df6c619f-4334-43e2-8b6a-4a32af1e4f85",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 43040097469,
+              "caa_release_mbid": "9e3992c7-06d1-4314-8e5c-504992660c8b"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/df6c619f-4334-43e2-8b6a-4a32af1e4f85"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/57a6dff3-daee-4e63-bc82-6bd6f5df2957"
+        ],
+        "title": "夜に駆ける"
+      },
+      {
+        "album": "勇者",
+        "creator": "YOASOBI",
+        "duration": 194164,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "YOASOBI",
+                  "artist_mbid": "df6c619f-4334-43e2-8b6a-4a32af1e4f85",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 36840450558,
+              "caa_release_mbid": "d103fe29-db8c-4edd-8500-2cf4044fe794"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/df6c619f-4334-43e2-8b6a-4a32af1e4f85"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/12aef90d-5132-42d7-988a-62c4ae472da2"
+        ],
+        "title": "勇者"
+      },
+      {
+        "album": "Cyberpunk 2077: Radio, Vol. 2: Original Soundtrack",
+        "creator": "Namakopuri as Us Cracks",
+        "duration": 214000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Namakopuri",
+                  "artist_mbid": "1b7d53f5-1746-420b-b23d-e6b7c41a0b37",
+                  "join_phrase": " as "
+                },
+                {
+                  "artist_credit_name": "Us Cracks",
+                  "artist_mbid": "07ee1730-aee1-4c90-a225-be7b3edc94be",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 28105410573,
+              "caa_release_mbid": "53002383-0ea4-44a4-97e1-b5d7d25e91a4"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/1b7d53f5-1746-420b-b23d-e6b7c41a0b37",
+              "https://musicbrainz.org/artist/07ee1730-aee1-4c90-a225-be7b3edc94be"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/15c5d5a6-9ae9-4727-a413-d48c57e867d9"
+        ],
+        "title": "PonPon Shit"
+      },
+      {
+        "album": "In Search of Darkness",
+        "creator": "CHVRCHES",
+        "duration": 316214,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "CHVRCHES",
+                  "artist_mbid": "6a93afbb-257f-4166-b389-9f2a1e5c5df8",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 46279724688,
+              "caa_release_mbid": "d4d2bf55-d5cd-4c74-a9a1-0e3ee0073aa3"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/6a93afbb-257f-4166-b389-9f2a1e5c5df8"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/0a487786-ebd9-4a32-9d3d-d0c4a46f1f43"
+        ],
+        "title": "Death Stranding"
+      },
+      {
+        "album": "CHECKPOiNT!",
+        "creator": "SAWTOWNE",
+        "duration": 202000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "SAWTOWNE",
+                  "artist_mbid": "31b60257-e0ab-42c6-97ee-3458b741c81e",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 46240863063,
+              "caa_release_mbid": "6e0902d1-658f-44e9-992d-ecaec33e9d7e"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/31b60257-e0ab-42c6-97ee-3458b741c81e"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/0805617c-1f3a-464c-a161-2264a6ea251a"
+        ],
+        "title": "M@GICAL☆CURE! LOVE ♥ SHOT!"
+      },
+      {
+        "album": "Nurture",
+        "creator": "Porter Robinson & Totally Enormous Extinct Dinosaurs",
+        "duration": 285813,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Porter Robinson",
+                  "artist_mbid": "4ae36ade-1798-48c4-b06b-cc68b7d3d83f",
+                  "join_phrase": " & "
+                },
+                {
+                  "artist_credit_name": "Totally Enormous Extinct Dinosaurs",
+                  "artist_mbid": "bd075a82-b196-4752-a1bb-3d87be3236a0",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 35536434577,
+              "caa_release_mbid": "a368a283-c070-42a0-bdd5-7974a7df1b9a"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/4ae36ade-1798-48c4-b06b-cc68b7d3d83f",
+              "https://musicbrainz.org/artist/bd075a82-b196-4752-a1bb-3d87be3236a0"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/6a2800f3-4d6a-4295-a4fa-5723aef92a94"
+        ],
+        "title": "Unfold"
+      },
+      {
+        "album": "生きる",
+        "creator": "椎名もた",
+        "duration": 221500,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "椎名もた",
+                  "artist_mbid": "a18946d8-bde9-4f97-83e1-1a519c73dd87",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 11060245659,
+              "caa_release_mbid": "96397728-6a2d-4cbf-980c-ba2af8830da7"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/a18946d8-bde9-4f97-83e1-1a519c73dd87"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/ee237771-eabf-4ec4-9e5e-7cbc1cd1a521"
+        ],
+        "title": "少女A"
+      },
+      {
+        "album": "ワン☆オポ!THE BEST OF BEST!! / ワンダフル☆オポチュニティ!",
+        "creator": "じーざす（ワンダフル☆オポチュニティ！） feat. 鏡音リン･レン",
+        "duration": 232773,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "じーざす",
+                  "artist_mbid": "c611da21-ad29-49c7-83db-567c0ca22b7a",
+                  "join_phrase": "（"
+                },
+                {
+                  "artist_credit_name": "ワンダフル☆オポチュニティ！",
+                  "artist_mbid": "67790b55-7e62-432a-9059-24c6bc7e385d",
+                  "join_phrase": "） feat. "
+                },
+                {
+                  "artist_credit_name": "鏡音リン",
+                  "artist_mbid": "e1aa2807-9cdf-412b-a390-2103cfc725ef",
+                  "join_phrase": "･"
+                },
+                {
+                  "artist_credit_name": "レン",
+                  "artist_mbid": "45999eb0-e665-4ab0-a809-0d6cd54ffe25",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 24836421795,
+              "caa_release_mbid": "28da6dfd-0fd3-4059-9d1d-bb582a7a7bee"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/c611da21-ad29-49c7-83db-567c0ca22b7a",
+              "https://musicbrainz.org/artist/67790b55-7e62-432a-9059-24c6bc7e385d",
+              "https://musicbrainz.org/artist/e1aa2807-9cdf-412b-a390-2103cfc725ef",
+              "https://musicbrainz.org/artist/45999eb0-e665-4ab0-a809-0d6cd54ffe25"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/acd9f09d-5032-4637-bcb8-454d2c7ae3f4"
+        ],
+        "title": "8HIT"
+      },
+      {
+        "album": "ALBUM No,1",
+        "creator": "ゆこぴ",
+        "duration": 137332,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "ゆこぴ",
+                  "artist_mbid": "7a441b3c-c2ca-4e16-b1e3-dbfc0be78472",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 37394135632,
+              "caa_release_mbid": "7f7f6de1-213b-4972-b448-73428d4df50b"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/7a441b3c-c2ca-4e16-b1e3-dbfc0be78472"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/6db52f2f-f506-42fa-ade6-8c6f754d3317"
+        ],
+        "title": "強風オールバック"
+      },
+      {
+        "album": "グレイテスト・アイドル",
+        "creator": "Mitchie M feat. 初音ミク",
+        "duration": 240000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Mitchie M",
+                  "artist_mbid": "e447a971-e4e2-4ea7-9330-472deb070e90",
+                  "join_phrase": " feat. "
+                },
+                {
+                  "artist_credit_name": "初音ミク",
+                  "artist_mbid": "130d679a-9a92-4373-8348-0800b6b93a30",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 44522406686,
+              "caa_release_mbid": "f7244824-8c4f-484f-8c7a-eb49c60e7aa8"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/e447a971-e4e2-4ea7-9330-472deb070e90",
+              "https://musicbrainz.org/artist/130d679a-9a92-4373-8348-0800b6b93a30"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/b4ac22f9-7704-499f-8f15-716580b7cc0a"
+        ],
+        "title": "FREELY TOMORROW"
+      },
+      {
+        "album": "Worlds",
+        "creator": "Porter Robinson",
+        "duration": 329000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Porter Robinson",
+                  "artist_mbid": "4ae36ade-1798-48c4-b06b-cc68b7d3d83f",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 8005829059,
+              "caa_release_mbid": "eaacccdc-3c35-4f18-8b73-f4e1bfc403f0"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/4ae36ade-1798-48c4-b06b-cc68b7d3d83f"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/60481378-6974-4683-b7ca-51f590df481a"
+        ],
+        "title": "Goodbye to a World"
+      },
+      {
+        "album": "Cyberpunk 2077: Radio, Vol. 2: Original Soundtrack",
+        "creator": "Rosa Walton as Hallie Coggins",
+        "duration": 246653,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Rosa Walton",
+                  "artist_mbid": "9a6273b2-72fa-47a4-a48b-073d6cbe037d",
+                  "join_phrase": " as "
+                },
+                {
+                  "artist_credit_name": "Hallie Coggins",
+                  "artist_mbid": "0ebdc5f5-0a11-415a-b6f3-efe0d36c6e9d",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 28105410573,
+              "caa_release_mbid": "53002383-0ea4-44a4-97e1-b5d7d25e91a4"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/9a6273b2-72fa-47a4-a48b-073d6cbe037d",
+              "https://musicbrainz.org/artist/0ebdc5f5-0a11-415a-b6f3-efe0d36c6e9d"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/c703515e-92ba-4d8f-8b8e-8fa85a480038"
+        ],
+        "title": "I Really Want to Stay at Your House"
+      },
+      {
+        "album": "新星目録",
+        "creator": "星街すいせい",
+        "duration": 164626,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "星街すいせい",
+                  "artist_mbid": "8eeb59f4-0071-4261-b1f8-91d8294622d2",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 44668799106,
+              "caa_release_mbid": "55c1d0c8-1130-4abe-9d7b-9b171f503e8a"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/8eeb59f4-0071-4261-b1f8-91d8294622d2"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/a7a3c583-3ee6-4015-b0b0-93515045b27f"
+        ],
+        "title": "ビビデバ"
+      },
+      {
+        "album": "supercell",
+        "creator": "supercell feat. 初音ミク",
+        "duration": 253413,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "supercell",
+                  "artist_mbid": "9b15ff5e-5bd1-43c2-821d-e31240aad334",
+                  "join_phrase": " feat. "
+                },
+                {
+                  "artist_credit_name": "初音ミク",
+                  "artist_mbid": "130d679a-9a92-4373-8348-0800b6b93a30",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 28729378048,
+              "caa_release_mbid": "18584c5e-f13a-42d0-af57-90b10d88545f"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/9b15ff5e-5bd1-43c2-821d-e31240aad334",
+              "https://musicbrainz.org/artist/130d679a-9a92-4373-8348-0800b6b93a30"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/b5c3432e-7ec5-4d81-92fe-e8e8e8dbd18b"
+        ],
+        "title": "ワールドイズマイン"
+      },
+      {
+        "album": "The Bends",
+        "creator": "Radiohead",
+        "duration": 233240,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Radiohead",
+                  "artist_mbid": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 32251121765,
+              "caa_release_mbid": "8af759be-1495-4cc4-85a7-47edc21fa348"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/b271dd19-ecee-4f87-b98a-a26b724f00e9"
+        ],
+        "title": "(Nice Dream)"
+      },
+      {
+        "album": "Screen Violence",
+        "creator": "CHVRCHES",
+        "duration": 273831,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "CHVRCHES",
+                  "artist_mbid": "6a93afbb-257f-4166-b389-9f2a1e5c5df8",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 30255282982,
+              "caa_release_mbid": "0a40aa63-eb64-467d-be57-3c9fe05f016f"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/6a93afbb-257f-4166-b389-9f2a1e5c5df8"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/97b2b4fe-472d-4ae6-9cbb-7386c4384627"
+        ],
+        "title": "Nightmares"
+      },
+      {
+        "album": "Cliffhanger",
+        "creator": "Grimm Grimm",
+        "duration": 319000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Grimm Grimm",
+                  "artist_mbid": "d5c5de35-c065-4e8d-8c72-2515934cd9fe",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 20403483961,
+              "caa_release_mbid": "094a8d15-b7e6-4226-8dab-3ff698332c2b"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/d5c5de35-c065-4e8d-8c72-2515934cd9fe"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/3181dcb2-90f7-4651-9411-76e51faa1341"
+        ],
+        "title": "Cliffhanger"
+      },
+      {
+        "album": "Interstellar",
+        "creator": "Hans Zimmer",
+        "duration": 402200,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Hans Zimmer",
+                  "artist_mbid": "e6de1f3b-6484-491c-88dd-6d619f142abc",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 8785956680,
+              "caa_release_mbid": "3dd79a9c-ede6-4d05-8735-5bb51a3e505b"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/e6de1f3b-6484-491c-88dd-6d619f142abc"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/1f10c43a-d133-4833-8adb-f9d7dd03af3b"
+        ],
+        "title": "Detach"
+      },
+      {
+        "album": "Confessions of a Rotten Girl",
+        "creator": "SAWTOWNE ft. 初音ミク",
+        "duration": 206000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "SAWTOWNE",
+                  "artist_mbid": "31b60257-e0ab-42c6-97ee-3458b741c81e",
+                  "join_phrase": " ft. "
+                },
+                {
+                  "artist_credit_name": "初音ミク",
+                  "artist_mbid": "130d679a-9a92-4373-8348-0800b6b93a30",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 40994229230,
+              "caa_release_mbid": "89e55199-2bcb-4121-8446-3c39ddcb5c5d"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/31b60257-e0ab-42c6-97ee-3458b741c81e",
+              "https://musicbrainz.org/artist/130d679a-9a92-4373-8348-0800b6b93a30"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/70a59e4b-03e6-4139-abb7-cb6e5d7e2a0e"
+        ],
+        "title": "Confessions of a Rotten Girl"
+      },
+      {
+        "album": "WOODKID FOR DEATH STRANDING 2",
+        "creator": "Woodkid",
+        "duration": 249826,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Woodkid",
+                  "artist_mbid": "420e923e-e74c-42ef-b771-2e2bcee93394",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 42229381339,
+              "caa_release_mbid": "edfc675d-d9cb-4d06-8fa3-ef809cd30a61"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/420e923e-e74c-42ef-b771-2e2bcee93394"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/af690e0d-9f74-4eaf-92c5-d654c5f0ecbc"
+        ],
+        "title": "Any Love of Any Kind (Choir version)"
+      },
+      {
+        "album": "ウェザーステーション",
+        "creator": "稲葉曇",
+        "duration": 188333,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "稲葉曇",
+                  "artist_mbid": "46196b9c-affa-4616-b53b-e967c8bd70e0",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 32044134254,
+              "caa_release_mbid": "0003a1ef-d574-4b04-a4cf-f37b7212d47c"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/46196b9c-affa-4616-b53b-e967c8bd70e0"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/fb9c7d1d-2136-43f3-8879-96bb46deb9ab"
+        ],
+        "title": "ハルノ寂寞"
+      },
+      {
+        "album": "The Rise and Fall of Ziggy Stardust and the Spiders From Mars",
+        "creator": "David Bowie",
+        "duration": 193266,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "David Bowie",
+                  "artist_mbid": "5441c29d-3602-4898-b1a1-b77fa23b8e50",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 7121875119,
+              "caa_release_mbid": "a8f17a5b-eaf3-48da-986e-7f3efdaf3db6"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/5441c29d-3602-4898-b1a1-b77fa23b8e50"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/a0ca0cc0-cc0d-431c-8a36-dd917ea0dfa2"
+        ],
+        "title": "Ziggy Stardust"
+      },
+      {
+        "album": "超かぐや姫！",
+        "creator": "yuigot & 月見ヤチヨ(cv.早見沙織)",
+        "duration": 232617,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "yuigot",
+                  "artist_mbid": "d28dfce7-3429-4707-8d62-730051d27dd7",
+                  "join_phrase": " & "
+                },
+                {
+                  "artist_credit_name": "月見ヤチヨ",
+                  "artist_mbid": "6861c875-4ce1-4267-ab54-1a37f9886d4d",
+                  "join_phrase": "(cv."
+                },
+                {
+                  "artist_credit_name": "早見沙織",
+                  "artist_mbid": "7c287fc8-8a14-49fc-8eca-84598834eb1d",
+                  "join_phrase": ")"
+                }
+              ],
+              "caa_id": 44940411120,
+              "caa_release_mbid": "baa6840f-4019-40f7-8495-4a1ba6c07e86"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/d28dfce7-3429-4707-8d62-730051d27dd7",
+              "https://musicbrainz.org/artist/6861c875-4ce1-4267-ab54-1a37f9886d4d",
+              "https://musicbrainz.org/artist/7c287fc8-8a14-49fc-8eca-84598834eb1d"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/5e4a5ce6-3ddc-4837-9e33-4a44640c6ac0"
+        ],
+        "title": "Remember"
+      },
+      {
+        "album": "DAISAN WAVE",
+        "creator": "みきとP",
+        "duration": 292000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "みきとP",
+                  "artist_mbid": "b839783f-03b2-46a2-a799-7f2299a5c215",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 38765844861,
+              "caa_release_mbid": "fc3bf231-6149-47d6-bcaf-e53644ed38db"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/b839783f-03b2-46a2-a799-7f2299a5c215"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/42698d59-93aa-4f97-b2a3-b90ee25b49fc"
+        ],
+        "title": "少女レイ"
+      },
+      {
+        "album": "Cyberpunk 2077",
+        "creator": "P.T. Adamczyk",
+        "duration": 250000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "P.T. Adamczyk",
+                  "artist_mbid": "bc1285ea-31c8-4f50-847e-b66244a142b3",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 28027315943,
+              "caa_release_mbid": "c1e0e247-51ca-4eb6-be2d-3e68df26e317"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/bc1285ea-31c8-4f50-847e-b66244a142b3"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/20cb5e24-ae82-4f31-99cb-06ce1f111621"
+        ],
+        "title": "The Rebel Path"
+      },
+      {
+        "album": "LEMON MELON COOKIE",
+        "creator": "TAK",
+        "duration": 152666,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "TAK",
+                  "artist_mbid": "ad8b42fd-e001-4946-ba7f-fdea2462062c",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 40958732727,
+              "caa_release_mbid": "5ccc4e8e-b2b3-41be-8551-caf601a3fe44"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/ad8b42fd-e001-4946-ba7f-fdea2462062c"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/e5928b28-0478-4e75-b129-0e78ec6e20e3"
+        ],
+        "title": "LEMON MELON COOKIE"
+      },
+      {
+        "album": "Once in a Long, Long While…",
+        "creator": "Low Roar feat. Jófríður",
+        "duration": 169000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "Low Roar",
+                  "artist_mbid": "2921ca1d-206e-411a-8d2e-e12494dcfa9a",
+                  "join_phrase": " feat. "
+                },
+                {
+                  "artist_credit_name": "Jófríður",
+                  "artist_mbid": "a496c927-705e-4f32-bf9f-94d5a2b90b0f",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 16424556444,
+              "caa_release_mbid": "dc1e8f89-4188-4705-8a4d-7903699cfd26"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/2921ca1d-206e-411a-8d2e-e12494dcfa9a",
+              "https://musicbrainz.org/artist/a496c927-705e-4f32-bf9f-94d5a2b90b0f"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/9ffedde7-da0a-4adb-ad34-ef5025fd018f"
+        ],
+        "title": "Bones"
+      },
+      {
+        "album": "FOR YOU",
+        "creator": "山下達郎",
+        "duration": 310000,
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "added_at": "2026-10-13T12:32:24.063555+00:00",
+            "added_by": "listenbrainz",
+            "additional_metadata": {
+              "artists": [
+                {
+                  "artist_credit_name": "山下達郎",
+                  "artist_mbid": "ad62391d-ab7e-4ac9-9ce8-3704bc6746bb",
+                  "join_phrase": ""
+                }
+              ],
+              "caa_id": 21523659859,
+              "caa_release_mbid": "a2f8424d-552b-4d0d-ba5a-aa43fac1fbc7"
+            },
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/ad62391d-ab7e-4ac9-9ce8-3704bc6746bb"
+            ]
+          }
+        },
+        "identifier": [
+          "https://musicbrainz.org/recording/02e79358-6870-4330-a917-236b37024944"
+        ],
+        "title": "MUSIC BOOK"
+      }
+    ]
+  }
+}

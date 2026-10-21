@@ -1,0 +1,241 @@
+{
+  "count": 25,
+  "offset": 0,
+  "playlist_count": 10,
+  "playlists": [
+    {
+      "playlist": {
+        "annotation": "<p>The ListenBrainz Weekly Exploration playlist helps you discover new music! \n    It may require active listening and skips. The playlist features tracks you haven't heard before, \n    selected by a collaborative filtering algorithm.</p>\n\n    <p>Updated every Monday morning based on your timezone.</p>\n",
+        "creator": "listenbrainz",
+        "date": "2026-10-13T12:34:38.734283+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "weekly-exploration"
+              },
+              "expires_at": "2026-10-27T12:34:36.932350+00:00"
+            },
+            "created_for": "tabjy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-10-13T12:34:38.734283+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/f08a37eb-ef57-470e-a52e-9b8d44f79a25",
+        "title": "Weekly Exploration for tabjy, week of 2026-10-12 Mon",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "<p>The ListenBrainz Weekly Exploration playlist helps you discover new music! \n    It may require active listening and skips. The playlist features tracks you haven't heard before, \n    selected by a collaborative filtering algorithm.</p>\n\n    <p>Updated every Monday morning based on your timezone.</p>\n",
+        "creator": "listenbrainz",
+        "date": "2026-10-13T12:33:27.604096+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "weekly-exploration"
+              },
+              "expires_at": "2026-10-27T12:33:26.209869+00:00"
+            },
+            "created_for": "tabjy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-10-13T12:33:27.604096+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/c9b187f0-d92b-4791-b8cb-718e91288246",
+        "title": "Weekly Exploration for tabjy, week of 2026-10-12 Mon",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "<p>The ListenBrainz Weekly Jams playlist features songs that you have listened to before, \n    arranged into a comfortable playlist that doesn't require active listening on your part.</p>\n\n    <p>Generated on Monday morning, in accordance with your timezone settings.</p>\n",
+        "creator": "listenbrainz",
+        "date": "2026-10-13T12:32:24.063555+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "weekly-jams"
+              },
+              "expires_at": "2026-10-27T12:32:20.941345+00:00"
+            },
+            "created_for": "tabjy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-10-13T12:32:24.063555+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/e3d029d6-d8bc-4443-ad64-79fc442c1088",
+        "title": "Weekly Jams for tabjy, week of 2026-10-12 Mon",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "<p>The ListenBrainz Weekly Jams playlist features songs that you have listened to before, \n    arranged into a comfortable playlist that doesn't require active listening on your part.</p>\n\n    <p>Generated on Monday morning, in accordance with your timezone settings.</p>\n",
+        "creator": "listenbrainz",
+        "date": "2026-10-13T12:31:15.125663+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "weekly-jams"
+              },
+              "expires_at": "2026-10-27T12:31:11.497885+00:00"
+            },
+            "created_for": "tabjy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-10-13T12:31:15.125663+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/c576fd05-7496-4899-8a15-cfa54e7daeab",
+        "title": "Weekly Jams for tabjy, week of 2026-10-12 Mon",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist contains the top tracks for tabjy that were first listened to in 2025.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2025Playlists\">Year in Music 2025 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T10:41:57.471995+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-discoveries-of-2025"
+              }
+            },
+            "created_for": "tabjy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T10:41:57.471995+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/adf2c191-a14c-44c7-9187-6569e99435ac",
+        "title": "Top Discoveries of 2025 for tabjy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist features recordings that were listened to by users similar to tabjy in 2025.\n                It is a discovery playlist that aims to introduce you to new music that other similar users\n                enjoy. It may require more active listening and may contain tracks that are not to your taste.\n            </p>\n            <p>\n                The users similar to you who contributed to this playlist: <a href=\"https://listenbrainz.org/user/sm0x45\">sm0x45</a>, <a href=\"https://listenbrainz.org/user/danielszepi\">danielszepi</a>, <a href=\"https://listenbrainz.org/user/lizzywizzy\">lizzywizzy</a>.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2025Playlists\">Year in Music 2025 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T10:27:39.750047+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-missed-recordings-of-2025"
+              }
+            },
+            "created_for": "tabjy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T10:27:39.750047+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/346e51fa-34a9-48bb-81e8-4f9448e50a0b",
+        "title": "Top Missed Recordings of 2025 for tabjy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist contains the top tracks for tabjy that were first listened to in 2024.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2024Playlists\">Year in Music 2024 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T08:45:58.452042+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-discoveries-of-2024"
+              }
+            },
+            "created_for": "tabjy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T08:45:58.452042+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/b89faccd-c015-4d12-9169-13c15088acd9",
+        "title": "Top Discoveries of 2024 for tabjy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist features recordings that were listened to by users similar to tabjy in 2024.\n                It is a discovery playlist that aims to introduce you to new music that other similar users\n                enjoy. It may require more active listening and may contain tracks that are not to your taste.\n            </p>\n            <p>\n                The users similar to you who contributed to this playlist: <a href=\"https://listenbrainz.org/user/pennymouse\">pennymouse</a>, <a href=\"https://listenbrainz.org/user/daemonspudguy\">daemonspudguy</a>, <a href=\"https://listenbrainz.org/user/lizzywizzy\">lizzywizzy</a>.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2024Playlists\">Year in Music 2024 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T08:35:11.652917+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-missed-recordings-of-2024"
+              }
+            },
+            "created_for": "tabjy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T08:35:11.652917+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/ee2371e8-6575-4bfd-818e-21ffe1c1f4a0",
+        "title": "Top Missed Recordings of 2024 for tabjy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist contains the top tracks for tabjy that were first listened to in 2023.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2023Playlists\">Year in Music 2023 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T07:15:17.633641+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-discoveries-of-2023"
+              }
+            },
+            "created_for": "tabjy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T07:15:17.633641+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/ecbb0b65-63e5-4cf2-858b-d709ba252842",
+        "title": "Top Discoveries of 2023 for tabjy",
+        "track": []
+      }
+    },
+    {
+      "playlist": {
+        "annotation": "\n            <p>\n                This playlist features recordings that were listened to by users similar to tabjy in 2023.\n                It is a discovery playlist that aims to introduce you to new music that other similar users\n                enjoy. It may require more active listening and may contain tracks that are not to your taste.\n            </p>\n            <p>\n                The users similar to you who contributed to this playlist: <a href=\"https://listenbrainz.org/user/qwertyadrian\">qwertyadrian</a>, <a href=\"https://listenbrainz.org/user/Rap_id\">Rap_id</a>, <a href=\"https://listenbrainz.org/user/pillow_of_winds\">pillow_of_winds</a>.\n            </p>\n            <p>\n                For more information on how this playlist is generated, please see our\n                <a href=\"https://musicbrainz.org/doc/YIM2023Playlists\">Year in Music 2023 Playlists</a> page.\n            </p>\n        ",
+        "creator": "listenbrainz",
+        "date": "2026-02-22T07:05:22.670299+00:00",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#playlist": {
+            "additional_metadata": {
+              "algorithm_metadata": {
+                "source_patch": "top-missed-recordings-of-2023"
+              }
+            },
+            "created_for": "tabjy",
+            "creator": "listenbrainz",
+            "last_modified_at": "2026-02-22T07:05:22.670299+00:00",
+            "public": true
+          }
+        },
+        "identifier": "https://listenbrainz.org/playlist/a195215e-da6c-4d70-bd41-b0e564e7dec0",
+        "title": "Top Missed Recordings of 2023 for tabjy",
+        "track": []
+      }
+    }
+  ]
+}
