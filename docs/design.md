@@ -320,6 +320,7 @@ Continues the numbering from requirements D-1…D-8.
 | D-14 | Config-page Sync now = `POST …/SyncNow` running orchestrator with `force: true`; dashboard Run now = task path with short-circuit | FR-22/FR-25 exactly: the button is the documented force escape hatch |
 | D-15 | `GET /Status` reads the state store for the config page | FR-04 without stuffing status into config |
 | D-16 | `ILibraryQueryFacade` (one-method wrapper over `ILibraryManager.GetItemList`) | Matcher unit-testable without a server |
+| D-17 | **Last-week playlist (2026-11-26)**: an optional second playlist maintains last week's jams. Last week is the **second-newest `weekly-jams` entry in the created-for-you list, by creation time** — the same interpretation the ListenBrainz website uses. The list retains the two most recent weeks; under load, ListenBrainz lags and computes both weeks in one catch-up batch seconds apart (observed 2026-11: two entries created 78 s apart; playlist titles lag too and are not parsed). The rotation is implicit: when a new week appears, the outgoing latest becomes the second-newest entry. | Owner-verified domain knowledge (LB website behavior); avoids title parsing and rotation state |
 
 ## 9. Milestone mapping
 

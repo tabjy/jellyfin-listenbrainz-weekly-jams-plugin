@@ -59,7 +59,9 @@ public sealed class StatusController : ControllerBase
             configuration.ListenBrainzUsername,
             string.IsNullOrWhiteSpace(configuration.PlaylistName) ? "Weekly Jams" : configuration.PlaylistName,
             configuration.OwningUserId,
-            configuration.IsPublic);
+            configuration.IsPublic,
+            configuration.SyncLastWeek,
+            string.IsNullOrWhiteSpace(configuration.LastWeekPlaylistName) ? "Last Week's Jams" : configuration.LastWeekPlaylistName);
 
         try
         {

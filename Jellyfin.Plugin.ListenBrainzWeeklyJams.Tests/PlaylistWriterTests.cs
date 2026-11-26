@@ -47,6 +47,7 @@ public sealed class PlaylistWriterTests
         var playlistId = await _writer.WriteAsync(
             existingPlaylistId: null,
             itemIds,
+            "Weekly Jams",
             new SyncOptions("tabjy", "Weekly Jams", owner.Id, IsPublic: true),
             CancellationToken.None);
 
@@ -67,6 +68,7 @@ public sealed class PlaylistWriterTests
         await _writer.WriteAsync(
             existingPlaylistId: null,
             [Guid.NewGuid()],
+            "Weekly Jams",
             new SyncOptions("tabjy", "Weekly Jams", OwningUserId: null, IsPublic: false),
             CancellationToken.None);
 
@@ -84,6 +86,7 @@ public sealed class PlaylistWriterTests
         var result = await _writer.WriteAsync(
             playlistId,
             itemIds,
+            "Weekly Jams",
             new SyncOptions("tabjy", "Weekly Jams", owner.Id, IsPublic: true),
             CancellationToken.None);
 
@@ -106,6 +109,7 @@ public sealed class PlaylistWriterTests
         await _writer.WriteAsync(
             staleId,
             [Guid.NewGuid()],
+            "Weekly Jams",
             new SyncOptions("tabjy", "Weekly Jams", owner.Id, IsPublic: true),
             CancellationToken.None);
 

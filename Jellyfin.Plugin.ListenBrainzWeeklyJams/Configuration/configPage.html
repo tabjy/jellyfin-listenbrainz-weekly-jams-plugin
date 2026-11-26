@@ -32,6 +32,18 @@
                             <span>Visible to all users</span>
                         </label>
                     </div>
+                    <div class="checkboxContainer checkboxContainer-withDescription">
+                        <label class="emby-checkbox-label">
+                            <input id="SyncLastWeek" name="SyncLastWeek" type="checkbox" is="emby-checkbox" />
+                            <span>Also sync last week's jams</span>
+                        </label>
+                        <div class="fieldDescription">Maintains a second playlist with the previous week's jams, so a week is never lost when the current one rolls over.</div>
+                    </div>
+                    <div class="inputContainer">
+                        <label class="inputLabel inputLabelUnfocused" for="LastWeekPlaylistName">Last-week playlist name</label>
+                        <input id="LastWeekPlaylistName" name="LastWeekPlaylistName" type="text" is="emby-input" />
+                        <div class="fieldDescription">The Jellyfin playlist for the previous week's jams.</div>
+                    </div>
                     <div>
                         <button is="emby-button" type="submit" class="raised button-submit block emby-button">
                             <span>Save</span>
@@ -73,9 +85,14 @@
                 }
                 var s = state.lastSummary || {};
                 var when = state.lastSyncAtUtc ? new Date(state.lastSyncAtUtc).toLocaleString() : 'unknown time';
-                el.textContent = 'Last sync ' + when + ' — week of ' + state.lastSyncedWeek + ': ' +
+                var text = 'Last sync ' + when + ' — week of ' + state.lastSyncedWeek + ': ' +
                     (s.matched || 0) + '/' + (s.total || 0) + ' matched (' + (s.viaMbid || 0) + ' by MBID, ' +
                     (s.viaName || 0) + ' by name), ' + (s.missing || 0) + ' missing.';
+                var prev = state.lastPreviousWeekSummary;
+                if (prev && prev.week) {
+                    text += ' Last week (' + prev.week + '): ' + (prev.matched || 0) + '/' + (prev.total || 0) + ' matched.';
+                }
+                el.textContent = text;
             }
 
             function lbwjRefreshStatus() {
@@ -106,6 +123,8 @@
                         document.querySelector('#ListenBrainzUsername').value = config.ListenBrainzUsername || '';
                         document.querySelector('#PlaylistName').value = config.PlaylistName || 'Weekly Jams';
                         document.querySelector('#IsPublic').checked = config.IsPublic !== false;
+                        document.querySelector('#SyncLastWeek').checked = config.SyncLastWeek === true;
+                        document.querySelector('#LastWeekPlaylistName').value = config.LastWeekPlaylistName || 'Last Week's Jams';
                         return lbwjLoadUsers(config);
                     }).then(function() {
                         Dashboard.hideLoadingMsg();
@@ -122,6 +141,8 @@
                     var owner = document.querySelector('#OwningUserId').value;
                     config.OwningUserId = owner ? owner : null;
                     config.IsPublic = document.querySelector('#IsPublic').checked;
+                    config.SyncLastWeek = document.querySelector('#SyncLastWeek').checked;
+                    config.LastWeekPlaylistName = document.querySelector('#LastWeekPlaylistName').value;
                     ApiClient.updatePluginConfiguration(LbwjConfig.pluginUniqueId, config).then(function (result) {
                         Dashboard.processPluginConfigurationUpdateResult(result);
                     });
@@ -143,6 +164,8 @@
                     var owner = document.querySelector('#OwningUserId').value;
                     config.OwningUserId = owner ? owner : null;
                     config.IsPublic = document.querySelector('#IsPublic').checked;
+                    config.SyncLastWeek = document.querySelector('#SyncLastWeek').checked;
+                    config.LastWeekPlaylistName = document.querySelector('#LastWeekPlaylistName').value;
                     return ApiClient.updatePluginConfiguration(LbwjConfig.pluginUniqueId, config);
                 });
 

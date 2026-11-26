@@ -16,6 +16,8 @@ namespace Jellyfin.Plugin.ListenBrainzWeeklyJams.Sync;
 /// <param name="Missing">Tracks missing from the library.</param>
 /// <param name="Ambiguous">Ambiguously resolved tracks.</param>
 /// <param name="Duration">Wall-clock duration.</param>
+/// <param name="PreviousWeek">The previous-week playlist summary, when
+/// last-week syncing is enabled and the previous week was seen (D-17).</param>
 public sealed record SyncReport(
     SyncOutcome Outcome,
     Guid PlaylistMbid,
@@ -27,4 +29,5 @@ public sealed record SyncReport(
     int ViaName,
     int Missing,
     int Ambiguous,
-    TimeSpan Duration);
+    TimeSpan Duration,
+    WeekSummary? PreviousWeek = null);

@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | v0.7 — implemented (plugin v0.2.0), integration-tested on the production server |
+| **Status** | v0.8 — implemented (plugin v0.3.0), integration-tested on the production server |
 | **Date** | 2026-10-20 |
 | **Target** | Jellyfin 12.2 (`targetAbi 12.0.0.0`, verified against `v12.2` source), .NET 10 (`net10.0`) — retargeted from 10.11 on 2026-10-21 when integration pre-flight showed the deployment server runs 12.2.0 |
 | **Name** | **ListenBrainz Weekly Jams**, assembly `Jellyfin.Plugin.ListenBrainzWeeklyJams` (OQ-1 resolved) |
@@ -221,6 +221,14 @@ Priority: **M** = must (v1), **S** = should, **C** = could.
 | FR-24 | M | After a successful sync, persist the source playlist's **LB playlist MBID** (and week date) as last-synced state in plugin data. |
 | FR-25 | M | Short-circuit: if the latest Weekly Jams MBID equals the stored one, the sync stops after the list fetch (no detail fetch, no matching, no playlist write) and reports "up to date". Manual "Sync now" from the config page ignores the short-circuit and performs a full re-sync (escape hatch after config changes or library rescans). |
 
+### 8.7 Last-week playlist (D-17)
+
+| ID | Pri | Requirement |
+|---|---|---|
+| FR-26 | M | Configuration holds **SyncLastWeek** (default off) and **LastWeekPlaylistName** (default `Last Week's Jams`). When enabled, a second rolling playlist maintains last week's jams with the same owner and visibility as the main playlist. |
+| FR-27 | M | Last week is the **second-newest `weekly-jams` entry in the created-for-you list, by creation time** — matching the ListenBrainz website's interpretation — including when ListenBrainus computes both weeks in one catch-up batch seconds apart. A single list entry means no last week (new accounts); the previous playlist is skipped gracefully. |
+| FR-28 | M | The last-week target has its own MBID-based short-circuit and zero-match guard. When the previous week's playlist has expired on ListenBrainz (404), the current playlist contents are kept and the next run retries. State advances per target. |
+
 ## 9. Non-functional requirements
 
 | ID | Pri | Requirement |
@@ -394,3 +402,4 @@ them was declined.
 | v0.5 | 2026-10-21 | OQ-6 resolved: minimal deterministic ambiguity policy — exact normalized-title match first, then lowest Jellyfin item Id; ambiguities counted and logged. Dry-run reference implementation and tests aligned. All design-phase questions resolved; design doc unblocked. |
 | v0.6 | 2026-10-21 | Target platform corrected: 10.11/net9.0 → **12.2/net10.0**. Integration pre-flight (server `/System/Info/Public`) revealed the deployment server runs 12.2.0 — the plugin template's 10.11 default was stale. All load-bearing API facts re-verified against `v12.2` source: UpdatePlaylist replace/null-Name semantics, plugin MVC application parts, `MediaBrowser.Common.Api` policies, `HasAnyProviderId` empty-value matching, MusicBrainzRecording tag mapping — unchanged. Delta: `AddItemToPlaylistAsync` gained `int? position`; new batched `HasAnyProviderIds` noted as future optimization. |
 | v0.7 | 2026-10-21 | Implementation complete (M0–M3, plugin v0.2.0) and integration-tested on the production server — see Appendix A.4. Week identifier now derived as the Monday of the playlist's creation week (structured, no title parsing). |
+| v0.8 | 2026-11-26 | **Last-week playlist** (D-17, FR-26..28, plugin v0.3.0): optional second playlist with the previous week's jams. Domain-model correction: the "same-week regeneration" interpretation of the created-for-you duplicate pairs (A.2/A.4) was wrong — the pair is **this week + last week**, retained by the list, sometimes computed seconds apart when ListenBrainz catches up under load (owner-verified against LB website behavior; observed live 2026-11: two entries created 78 s apart, titles lagging three weeks). Week display remains creation-Monday (cosmetic; change detection is MBID-based). |

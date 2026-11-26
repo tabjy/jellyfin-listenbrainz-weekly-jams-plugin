@@ -1,7 +1,7 @@
 ---
 name: "ListenBrainz Weekly Jams"
 guid: "5b9c524a-b162-4a28-9c6d-3a30e4b33998"
-version: "0.2.0.0"
+version: "0.3.0.0"
 targetAbi: "12.0.0.0"
 framework: "net10.0"
 overview: "Sync your ListenBrainz Weekly Jams playlist into Jellyfin"
@@ -16,9 +16,10 @@ owner: "tabjy"
 artifacts:
   - "Jellyfin.Plugin.ListenBrainzWeeklyJams.dll"
 changelog: >
-  First working release, integration-tested on a production Jellyfin 12.2
-  server. Syncs the latest ListenBrainz Weekly Jams playlist into a rolling
-  Jellyfin playlist via a daily scheduled task: MusicBrainz recording-ID
-  matching with artist/title fallback, immutable-playlist short-circuit
-  (unchanged weeks cost one API call), zero-match guard, in-place refresh
-  that preserves user renames, and missing-track reporting in the server log.
+  New: optional last-week playlist. Enable "Also sync last week's jams" in
+  the plugin configuration to maintain a second playlist with the previous
+  week's jams — the second-newest created-for-you playlist, matching the
+  ListenBrainz website's interpretation (entries can appear seconds apart
+  when ListenBrainz catches up under load). Last-week syncing has its own
+  change detection and zero-match guard, and an expired previous week
+  keeps the current playlist contents.

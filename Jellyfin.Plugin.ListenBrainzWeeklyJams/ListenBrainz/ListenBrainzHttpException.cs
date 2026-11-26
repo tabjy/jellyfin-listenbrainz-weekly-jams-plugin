@@ -5,7 +5,7 @@ namespace Jellyfin.Plugin.ListenBrainzWeeklyJams.ListenBrainz;
 /// <summary>
 /// An unexpected HTTP status from the ListenBrainz API.
 /// </summary>
-internal sealed class ListenBrainzHttpException : ListenBrainzException
+public sealed class ListenBrainzHttpException : ListenBrainzException
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="ListenBrainzHttpException"/> class.

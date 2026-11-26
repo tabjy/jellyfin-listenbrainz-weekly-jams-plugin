@@ -18,12 +18,14 @@ public interface IPlaylistWriter
     /// <param name="existingPlaylistId">The remembered playlist ID; null or
     /// deleted means create (FR-19).</param>
     /// <param name="itemIds">The ordered item IDs.</param>
-    /// <param name="options">The sync options.</param>
+    /// <param name="playlistName">The playlist name (main or last-week, D-17).</param>
+    /// <param name="options">The sync options (owner, visibility).</param>
     /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>The playlist ID (to be remembered in state, FR-16).</returns>
     Task<Guid> WriteAsync(
         Guid? existingPlaylistId,
         IReadOnlyList<Guid> itemIds,
+        string playlistName,
         SyncOptions options,
         CancellationToken cancellationToken);
 }

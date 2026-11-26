@@ -28,6 +28,17 @@ public class PluginConfiguration : BasePluginConfiguration
     public string PlaylistName { get; set; }
 
     /// <summary>
+    /// Gets or sets a value indicating whether a second playlist with the
+    /// previous week's jams is also maintained (D-17, FR-26).
+    /// </summary>
+    public bool SyncLastWeek { get; set; }
+
+    /// <summary>
+    /// Gets or sets the name of the previous-week playlist.
+    /// </summary>
+    public string LastWeekPlaylistName { get; set; } = "Last Week's Jams";
+
+    /// <summary>
     /// Gets or sets the owning Jellyfin user; null means the first
     /// administrator (FR-03, OQ-4).
     /// </summary>

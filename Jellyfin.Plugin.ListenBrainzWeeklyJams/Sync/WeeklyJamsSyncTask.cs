@@ -59,7 +59,9 @@ public sealed class WeeklyJamsSyncTask : IScheduledTask
             configuration.ListenBrainzUsername,
             string.IsNullOrWhiteSpace(configuration.PlaylistName) ? "Weekly Jams" : configuration.PlaylistName,
             configuration.OwningUserId,
-            configuration.IsPublic);
+            configuration.IsPublic,
+            configuration.SyncLastWeek,
+            string.IsNullOrWhiteSpace(configuration.LastWeekPlaylistName) ? "Last Week's Jams" : configuration.LastWeekPlaylistName);
 
         progress.Report(10.0);
 

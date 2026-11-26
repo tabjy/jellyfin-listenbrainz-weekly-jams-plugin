@@ -51,6 +51,7 @@ public sealed class PlaylistWriter : IPlaylistWriter
     public async Task<Guid> WriteAsync(
         Guid? existingPlaylistId,
         IReadOnlyList<Guid> itemIds,
+        string playlistName,
         SyncOptions options,
         CancellationToken cancellationToken)
     {
@@ -62,7 +63,7 @@ public sealed class PlaylistWriter : IPlaylistWriter
         {
             var result = await _playlistManager.CreatePlaylist(new PlaylistCreationRequest
             {
-                Name = options.PlaylistName,
+                Name = playlistName,
                 ItemIdList = itemIds,
                 MediaType = MediaType.Audio,
                 UserId = ownerUserId,
@@ -71,7 +72,7 @@ public sealed class PlaylistWriter : IPlaylistWriter
 
             _logger.LogInformation(
                 "Created playlist {Name} with {Count} items for user {UserId}",
-                options.PlaylistName,
+                playlistName,
                 itemIds.Count,
                 ownerUserId);
 

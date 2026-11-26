@@ -26,6 +26,9 @@ from your listening history every week.
 - One rolling playlist is created and refreshed in place — order preserved,
   renames survive, tracks missing from your library are reported in the
   server log.
+- **Last week's jams (optional, v0.3.0):** enable *Also sync last week's
+  jams* to maintain a second playlist with the previous week's playlist, so
+  a week is never lost when the current one rolls over.
 - Safety: a week that matches zero tracks never wipes the playlist, and a
   failed ListenBrainz fetch never touches it.
 
